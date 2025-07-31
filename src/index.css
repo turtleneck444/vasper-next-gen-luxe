@@ -11,21 +11,21 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
     /* Corporate color palette */
     --background: 0 0% 100%;
     --foreground: 220 14% 11%;
-    
+
     /* Professional blues */
     --primary: 220 60% 15%;
     --primary-light: 220 60% 97%;
     --primary-medium: 220 60% 25%;
-    
+
     /* Corporate neutrals */
     --corporate-gray: 220 9% 46%;
     --corporate-light: 220 9% 96%;
     --corporate-border: 220 9% 88%;
-    
+
     /* Trust gold - subtle and professional */
     --trust-gold: 45 69% 45%;
     --trust-gold-light: 45 69% 96%;
-    
+
     /* Semantic mappings for shadcn */
     --background: 0 0% 100%;
     --foreground: 220 14% 11%;
@@ -111,6 +111,9 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  .theme {
+    --animate-skew-scroll: skew-scroll 20s linear infinite;
+  }
 }
 
 @layer base {
@@ -132,7 +135,7 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   .corporate-card {
     @apply bg-white border border-border shadow-sm hover:shadow-md transition-shadow duration-200;
   }
-  
+
   .corporate-section {
     @apply py-20 lg:py-24;
   }
@@ -141,11 +144,11 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   .gradient-corporate {
     background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
   }
-  
+
   .gradient-primary-subtle {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-medium)) 100%);
   }
-  
+
   .gradient-trust {
     background: linear-gradient(135deg, hsl(var(--trust-gold)) 0%, hsl(var(--primary)) 100%);
   }
@@ -162,7 +165,7 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   .shadow-corporate {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  
+
   .shadow-corporate-lg {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
@@ -171,11 +174,11 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   .animate-fade-up {
     animation: fade-up 0.6s ease-out;
   }
-  
+
   .animate-scale-subtle {
     transition: transform 0.2s ease-in-out;
   }
-  
+
   .animate-scale-subtle:hover {
     transform: scale(1.02);
   }
@@ -195,5 +198,19 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ---break---
+*/
+
+@theme inline {
+  @keyframes skew-scroll {
+  0% {
+    transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg);
+    }
+  100% {
+    transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateY(-100%);
+    }
   }
 }
