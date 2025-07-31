@@ -1,84 +1,93 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Cloud, Network } from "lucide-react";
+import { ArrowRight, Shield, Cloud, Network, CheckCircle } from "lucide-react";
 import heroBackground from "@/assets/hero-network-bg.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center">
+      {/* Background Image with Corporate Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-transparent" />
-      
-      {/* Animated Network Nodes */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse-slow" />
-        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-primary-glow rounded-full animate-float" />
-        <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-gold rounded-full animate-pulse-slow delay-1000" />
-        <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary-glow rounded-full animate-float delay-2000" />
-      </div>
+      <div className="absolute inset-0 hero-overlay" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 glass rounded-full border border-white/20">
-          <span className="text-gold text-sm font-medium">No client is too small</span>
+        {/* Trust Badge */}
+        <div className="inline-flex items-center gap-3 px-6 py-3 mb-8 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <CheckCircle className="w-5 h-5 text-trust-gold" />
+          <span className="text-white font-medium">Enterprise-Grade IT Solutions</span>
           <span className="text-white/70">•</span>
-          <span className="text-white/90 text-sm">Contact us for a quote</span>
+          <span className="text-white/90">Fortune 500 Trusted</span>
         </div>
         
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           Everything you need in{" "}
-          <span className="text-gradient-gold">IT</span>
+          <span className="text-corporate-gradient">IT</span>
         </h1>
         
         {/* Subheading */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-          Our team of experienced professionals will help you stay ahead of the game 
-          with our top-of-the-line technology solutions.
+          Empowering enterprises with comprehensive technology solutions. 
+          Trusted by industry leaders for reliability, security, and innovation.
         </p>
         
-        {/* Service Icons */}
-        <div className="flex justify-center gap-8 mb-12">
-          <div className="flex flex-col items-center gap-2 group">
-            <div className="p-4 glass rounded-2xl group-hover:shadow-glow transition-all duration-300">
-              <Shield className="w-8 h-8 text-gold" />
+        {/* Service Icons - Clean & Professional */}
+        <div className="flex justify-center gap-12 mb-12">
+          <div className="flex flex-col items-center gap-3 group">
+            <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
+              <Shield className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/70">Cybersecurity</span>
+            <span className="text-sm text-white/80 font-medium">Cybersecurity</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group">
-            <div className="p-4 glass rounded-2xl group-hover:shadow-glow transition-all duration-300">
-              <Cloud className="w-8 h-8 text-gold" />
+          <div className="flex flex-col items-center gap-3 group">
+            <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
+              <Cloud className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/70">Cloud Computing</span>
+            <span className="text-sm text-white/80 font-medium">Cloud Solutions</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group">
-            <div className="p-4 glass rounded-2xl group-hover:shadow-glow transition-all duration-300">
-              <Network className="w-8 h-8 text-gold" />
+          <div className="flex flex-col items-center gap-3 group">
+            <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
+              <Network className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/70">Network Management</span>
+            <span className="text-sm text-white/80 font-medium">Infrastructure</span>
           </div>
         </div>
         
-        {/* CTA Button */}
-        <Button 
-          size="lg" 
-          className="gradient-gold text-primary font-semibold px-8 py-4 text-lg rounded-2xl shadow-luxury hover:shadow-glow transition-all duration-300 group"
-        >
-          Get In Touch
-          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-        </Button>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gold rounded-full mt-2 animate-bounce" />
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            size="lg" 
+            className="gradient-trust text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-corporate-lg hover:shadow-xl transition-all duration-300 group"
+          >
+            Schedule Consultation
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </Button>
+          <Button 
+            size="lg" 
+            variant="outline"
+            className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-4 text-lg rounded-lg"
+          >
+            View Services
+          </Button>
+        </div>
+        
+        {/* Trust Indicators */}
+        <div className="mt-16 flex justify-center items-center gap-8 text-white/70">
+          <div className="flex items-center gap-2">
+            <CheckCircle className="w-4 h-4 text-trust-gold" />
+            <span className="text-sm">SOC 2 Certified</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle className="w-4 h-4 text-trust-gold" />
+            <span className="text-sm">24/7 Support</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle className="w-4 h-4 text-trust-gold" />
+            <span className="text-sm">99.9% Uptime</span>
+          </div>
         </div>
       </div>
     </section>

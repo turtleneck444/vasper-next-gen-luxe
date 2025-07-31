@@ -7,60 +7,61 @@ import {
   Server, 
   Smartphone, 
   Database,
-  ArrowRight 
+  ArrowRight,
+  CheckCircle
 } from "lucide-react";
 
 export const Services = () => {
   const services = [
     {
-      icon: <Shield className="w-12 h-12 text-gold" />,
+      icon: <Shield className="w-10 h-10 text-trust-gold" />,
       title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your digital assets and ensure business continuity.",
-      features: ["Threat Detection", "Security Audits", "Compliance Management", "Incident Response"]
+      description: "Enterprise-grade security solutions to protect your digital assets and ensure regulatory compliance.",
+      features: ["Threat Intelligence", "Security Operations Center", "Compliance Management", "Incident Response"]
     },
     {
-      icon: <Cloud className="w-12 h-12 text-gold" />,
-      title: "Cloud Computing",
-      description: "Scalable cloud infrastructure and migration services to modernize your business operations.",
-      features: ["Cloud Migration", "Infrastructure as Code", "Multi-Cloud Strategy", "Cost Optimization"]
+      icon: <Cloud className="w-10 h-10 text-trust-gold" />,
+      title: "Cloud Solutions",
+      description: "Strategic cloud adoption and migration services designed for enterprise scalability and efficiency.",
+      features: ["Cloud Strategy", "Multi-Cloud Management", "DevOps Integration", "Cost Optimization"]
     },
     {
-      icon: <Network className="w-12 h-12 text-gold" />,
-      title: "Network Management", 
-      description: "Robust networking solutions for reliable connectivity and optimal performance.",
-      features: ["Network Design", "Performance Monitoring", "Wireless Solutions", "Network Security"]
+      icon: <Network className="w-10 h-10 text-trust-gold" />,
+      title: "Infrastructure Management", 
+      description: "Comprehensive infrastructure services ensuring optimal performance and reliability for mission-critical operations.",
+      features: ["Network Architecture", "Performance Monitoring", "Capacity Planning", "Infrastructure Security"]
     },
     {
-      icon: <Server className="w-12 h-12 text-gold" />,
-      title: "Infrastructure Services",
-      description: "Enterprise-grade infrastructure management and optimization for maximum efficiency.",
-      features: ["Server Management", "Virtualization", "Backup Solutions", "Disaster Recovery"]
+      icon: <Server className="w-10 h-10 text-trust-gold" />,
+      title: "Enterprise Infrastructure",
+      description: "Robust infrastructure solutions designed for high availability and enterprise-scale operations.",
+      features: ["Data Center Services", "Virtualization", "Backup & Recovery", "Business Continuity"]
     },
     {
-      icon: <Smartphone className="w-12 h-12 text-gold" />,
-      title: "Digital Solutions",
-      description: "Custom software development and digital transformation consulting services.",
-      features: ["Custom Development", "API Integration", "Mobile Solutions", "Digital Strategy"]
+      icon: <Smartphone className="w-10 h-10 text-trust-gold" />,
+      title: "Digital Transformation",
+      description: "Strategic consulting and implementation services to modernize your technology landscape.",
+      features: ["Legacy Modernization", "Process Automation", "Digital Strategy", "Change Management"]
     },
     {
-      icon: <Database className="w-12 h-12 text-gold" />,
-      title: "Data Management",
-      description: "Comprehensive data solutions including analytics, storage, and governance.",
-      features: ["Data Analytics", "Database Design", "Data Migration", "Business Intelligence"]
+      icon: <Database className="w-10 h-10 text-trust-gold" />,
+      title: "Data & Analytics",
+      description: "Enterprise data solutions enabling informed decision-making and operational intelligence.",
+      features: ["Data Architecture", "Business Intelligence", "Advanced Analytics", "Data Governance"]
     }
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-primary-light via-background to-gold-light">
+    <section id="services" className="corporate-section bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="text-gradient-primary">Services</span>
+            Enterprise <span className="text-corporate-gradient">IT Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive IT solutions designed to empower your business 
-            and drive digital transformation across all sectors.
+          <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
+            Comprehensive technology solutions engineered for enterprise environments. 
+            Delivering reliability, security, and scalability at every level.
           </p>
         </div>
 
@@ -69,57 +70,68 @@ export const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={service.title}
-              className="p-8 shadow-luxury hover:shadow-glow transition-all duration-300 border-tech-light group bg-card/80 backdrop-blur-sm"
+              className="corporate-card p-8 h-full flex flex-col animate-scale-subtle"
             >
               {/* Icon */}
-              <div className="mb-6 p-4 bg-gradient-to-br from-gold-light to-primary-light rounded-2xl w-fit group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-6 p-4 bg-trust-light rounded-xl w-fit">
                 {service.icon}
               </div>
               
               {/* Content */}
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              
-              {/* Features */}
-              <ul className="space-y-2 mb-6">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 bg-gold rounded-full mr-3" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold mb-4 text-foreground">
+                  {service.title}
+                </h3>
+                <p className="text-corporate-gray mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+                
+                {/* Features */}
+                <ul className="space-y-3 mb-6">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center text-sm text-corporate-gray">
+                      <CheckCircle className="w-4 h-4 text-trust-gold mr-3 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               
               {/* CTA */}
               <Button 
                 variant="outline" 
-                className="w-full border-gold text-gold hover:bg-gold hover:text-primary group"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
               >
                 Learn More
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Card>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="text-center p-12 glass rounded-3xl border border-white/20">
+        <div className="text-center bg-white rounded-2xl shadow-corporate-lg p-12">
           <h3 className="text-3xl font-bold mb-4 text-foreground">
-            Ready to Transform Your Business?
+            Ready to Modernize Your IT Infrastructure?
           </h3>
-          <p className="text-muted-foreground mb-8 text-lg">
-            Let's discuss how our IT solutions can drive your success.
+          <p className="text-corporate-gray mb-8 text-lg max-w-2xl mx-auto">
+            Our enterprise solutions team is ready to assess your needs and design a comprehensive technology strategy.
           </p>
-          <Button 
-            size="lg" 
-            className="gradient-gold text-primary font-semibold px-8 py-4 text-lg rounded-2xl shadow-luxury hover:shadow-glow transition-all duration-300"
-          >
-            Get Started Today
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="gradient-primary-subtle text-white font-semibold px-8 py-3 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
+            >
+              Schedule Consultation
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3"
+            >
+              Download Brochure
+            </Button>
+          </div>
         </div>
       </div>
     </section>

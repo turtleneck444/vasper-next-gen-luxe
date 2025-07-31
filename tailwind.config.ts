@@ -27,20 +27,18 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))',
-					light: 'hsl(var(--primary-light))'
+					light: 'hsl(var(--primary-light))',
+					medium: 'hsl(var(--primary-medium))'
 				},
-				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					dark: 'hsl(var(--gold-dark))',
-					light: 'hsl(var(--gold-light))'
+				corporate: {
+					gray: 'hsl(var(--corporate-gray))',
+					light: 'hsl(var(--corporate-light))',
+					border: 'hsl(var(--corporate-border))'
 				},
-				tech: {
-					dark: 'hsl(var(--tech-dark))',
-					medium: 'hsl(var(--tech-medium))',
-					light: 'hsl(var(--tech-light))'
+				trust: {
+					gold: 'hsl(var(--trust-gold))',
+					light: 'hsl(var(--trust-gold-light))'
 				},
-				glass: 'hsl(var(--glass))',
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'

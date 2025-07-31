@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, Shield } from "lucide-react";
 import vaspernetsLogo from "@/assets/vaspernet-logo.png";
 
 export const Navigation = () => {
@@ -14,7 +14,7 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-corporate-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -22,7 +22,7 @@ export const Navigation = () => {
             <img 
               src={vaspernetsLogo} 
               alt="VasperNet Technology" 
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
           </div>
 
@@ -32,7 +32,7 @@ export const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-gold transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -41,17 +41,17 @@ export const Navigation = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center gap-6">
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-4 text-sm text-corporate-gray">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-gold" />
-                <span>Mon-Fri 9AM-5PM</span>
+                <Shield className="w-4 h-4 text-trust-gold" />
+                <span>Enterprise Security</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-gold" />
-                <span>hello@vaspernet.com</span>
+                <Phone className="w-4 h-4 text-trust-gold" />
+                <span>(555) 123-4567</span>
               </div>
             </div>
-            <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-primary">
+            <Button className="gradient-primary-subtle text-white hover:shadow-corporate transition-all duration-200">
               Get Quote
             </Button>
           </div>
@@ -72,20 +72,20 @@ export const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10">
+          <div className="md:hidden py-4 border-t border-corporate-border">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-foreground hover:text-gold transition-colors duration-200 font-medium py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
-              <div className="pt-4 border-t border-white/10">
-                <Button className="w-full gradient-gold text-primary font-semibold">
+              <div className="pt-4 border-t border-corporate-border">
+                <Button className="w-full gradient-primary-subtle text-white font-semibold">
                   Get Quote
                 </Button>
               </div>

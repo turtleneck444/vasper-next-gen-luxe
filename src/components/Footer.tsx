@@ -1,54 +1,66 @@
-import { Phone, Mail, MapPin, Shield, Award, Clock } from "lucide-react";
+import { Phone, Mail, Shield, Award, Clock, Building2 } from "lucide-react";
 import vaspernetsLogo from "@/assets/vaspernet-logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-tech-dark text-white">
+    <footer className="bg-primary text-white">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Company Info */}
-          <div className="space-y-6">
+          <div className="lg:col-span-2 space-y-6">
             <div>
               <img 
                 src={vaspernetsLogo} 
                 alt="VasperNet Technology" 
-                className="h-12 w-auto mb-4"
+                className="h-10 w-auto mb-6 brightness-0 invert"
               />
-              <p className="text-white/80 leading-relaxed">
-                Empowering businesses through innovative IT solutions. 
-                Your trusted partner in digital transformation.
+              <p className="text-white/80 leading-relaxed mb-6 max-w-md">
+                Trusted enterprise technology partner delivering innovative IT solutions 
+                to Fortune 500 companies worldwide. Excellence in every engagement.
               </p>
             </div>
             
-            <div className="flex gap-4">
-              <div className="p-2 bg-white/10 rounded-lg">
-                <Shield className="w-5 h-5 text-gold" />
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-trust-gold/20 rounded-lg">
+                  <Shield className="w-4 h-4 text-trust-gold" />
+                </div>
+                <div>
+                  <p className="font-semibold text-trust-gold text-sm">SOC 2 Certified</p>
+                  <p className="text-xs text-white/60">Enterprise Security</p>
+                </div>
               </div>
-              <div>
-                <p className="font-semibold text-gold">Enterprise Security</p>
-                <p className="text-sm text-white/70">SOC 2 Compliant</p>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-trust-gold/20 rounded-lg">
+                  <Award className="w-4 h-4 text-trust-gold" />
+                </div>
+                <div>
+                  <p className="font-semibold text-trust-gold text-sm">ISO 27001</p>
+                  <p className="text-xs text-white/60">Quality Assured</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Services */}
+          {/* Enterprise Services */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-gold">Services</h3>
+            <h3 className="text-lg font-bold mb-6 text-trust-gold">Enterprise Services</h3>
             <ul className="space-y-3">
               {[
-                "Cybersecurity",
-                "Cloud Computing", 
+                "Cybersecurity Solutions",
+                "Cloud Infrastructure", 
                 "Network Management",
-                "Infrastructure Services",
-                "Digital Solutions",
-                "Data Management"
+                "Digital Transformation",
+                "Data & Analytics",
+                "Managed Services"
               ].map((service) => (
                 <li key={service}>
                   <a 
                     href="#services" 
-                    className="text-white/80 hover:text-gold transition-colors duration-200"
+                    className="text-white/80 hover:text-trust-gold transition-colors duration-200 text-sm"
                   >
                     {service}
                   </a>
@@ -57,68 +69,45 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Contact & Support */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-gold">Quick Links</h3>
-            <ul className="space-y-3">
-              {[
-                { label: "About Us", href: "#about" },
-                { label: "Our Services", href: "#services" },
-                { label: "Portfolio", href: "#portfolio" },
-                { label: "Contact", href: "#contact" },
-                { label: "Get Quote", href: "#contact" },
-                { label: "Support", href: "#contact" }
-              ].map((link) => (
-                <li key={link.label}>
-                  <a 
-                    href={link.href} 
-                    className="text-white/80 hover:text-gold transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-gold">Get in Touch</h3>
-            <div className="space-y-4">
+            <h3 className="text-lg font-bold mb-6 text-trust-gold">Enterprise Support</h3>
+            
+            <div className="space-y-4 mb-6">
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-gold" />
+                <Phone className="w-4 h-4 text-trust-gold flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium">+1 (555) 123-4567</p>
-                  <p className="text-sm text-white/70">24/7 Emergency Support</p>
+                  <p className="text-white font-medium text-sm">+1 (555) 123-4567</p>
+                  <p className="text-xs text-white/60">24/7 Emergency Line</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-gold" />
+                <Mail className="w-4 h-4 text-trust-gold flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium">hello@vaspernet.com</p>
-                  <p className="text-sm text-white/70">Response within 4 hours</p>
+                  <p className="text-white font-medium text-sm">enterprise@vaspernet.com</p>
+                  <p className="text-xs text-white/60">Response under 4 hours</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-gold" />
+                <Clock className="w-4 h-4 text-trust-gold flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium">Mon-Fri 9AM-5PM</p>
-                  <p className="text-sm text-white/70">Business Hours</p>
+                  <p className="text-white font-medium text-sm">Mon-Fri 8AM-6PM EST</p>
+                  <p className="text-xs text-white/60">Business Hours</p>
                 </div>
               </div>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="mt-6 flex gap-4">
-              <div className="p-2 bg-white/10 rounded-lg">
-                <Award className="w-5 h-5 text-gold" />
+            {/* Compliance */}
+            <div className="p-4 bg-white/5 rounded-lg border border-white/10">
+              <div className="flex items-center gap-2 mb-2">
+                <Building2 className="w-4 h-4 text-trust-gold" />
+                <span className="text-trust-gold font-semibold text-sm">Enterprise Ready</span>
               </div>
-              <div>
-                <p className="font-semibold text-gold">Certified Experts</p>
-                <p className="text-sm text-white/70">Industry Leading</p>
-              </div>
+              <p className="text-xs text-white/70">
+                HIPAA • PCI DSS • SOX Compliant
+              </p>
             </div>
           </div>
         </div>
@@ -126,19 +115,23 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/70 text-sm">
-              Copyright © {currentYear} VasperNet Technology - All Rights Reserved.
-            </p>
-            <div className="flex items-center gap-6 text-sm text-white/70">
-              <a href="#" className="hover:text-gold transition-colors duration-200">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-gold transition-colors duration-200">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-gold transition-colors duration-200">
-                Security
-              </a>
+            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-white/70">
+              <p>© {currentYear} VasperNet Technology. All rights reserved.</p>
+              <div className="flex items-center gap-4">
+                <a href="#" className="hover:text-trust-gold transition-colors duration-200">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:text-trust-gold transition-colors duration-200">
+                  Terms of Service
+                </a>
+                <a href="#" className="hover:text-trust-gold transition-colors duration-200">
+                  Security
+                </a>
+              </div>
+            </div>
+            
+            <div className="text-xs text-white/60">
+              Enterprise-grade technology solutions since 2009
             </div>
           </div>
         </div>
