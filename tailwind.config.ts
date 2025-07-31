@@ -26,8 +26,21 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))',
+					light: 'hsl(var(--primary-light))'
 				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					dark: 'hsl(var(--gold-dark))',
+					light: 'hsl(var(--gold-light))'
+				},
+				tech: {
+					dark: 'hsl(var(--tech-dark))',
+					medium: 'hsl(var(--tech-medium))',
+					light: 'hsl(var(--tech-light))'
+				},
+				glass: 'hsl(var(--glass))',
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
