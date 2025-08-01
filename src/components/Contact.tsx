@@ -52,7 +52,7 @@ export const Contact = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-extrabold text-[#111] text-4xl md:text-5xl mb-6">
             Contact Our <span className="text-corporate-gradient">Experts</span>
           </h2>
           <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
@@ -65,7 +65,7 @@ export const Contact = () => {
           {/* Contact Form */}
           <Card className="corporate-card p-8">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
+              <h3 className="font-extrabold text-[#111] text-2xl mb-4">
                 Schedule a Consultation
               </h3>
               <p className="text-corporate-gray">
@@ -177,7 +177,7 @@ export const Contact = () => {
           <div className="space-y-8">
             {/* Contact Details */}
             <Card className="corporate-card p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">
+              <h3 className="font-extrabold text-[#111] text-2xl mb-6">
                 Enterprise Support
               </h3>
 
@@ -223,7 +223,7 @@ export const Contact = () => {
                 <div className="p-3 bg-trust-light rounded-xl">
                   <Clock className="w-5 h-5 text-trust-gold" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">Support Hours</h3>
+                <h3 className="font-extrabold text-[#111] text-2xl">Support Hours</h3>
               </div>
 
               <div className="space-y-4">
@@ -250,7 +250,7 @@ export const Contact = () => {
 
             {/* Trust Indicators */}
             <Card className="corporate-card p-8">
-              <h3 className="text-xl font-bold mb-4 text-foreground">
+              <h3 className="font-extrabold text-[#111] text-xl mb-4">
                 Enterprise Certifications
               </h3>
               <div className="grid grid-cols-2 gap-4 text-sm text-corporate-gray">

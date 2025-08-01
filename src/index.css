@@ -113,6 +113,7 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
   }
   .theme {
     --animate-skew-scroll: skew-scroll 20s linear infinite;
+    --animate-meteor-effect: meteor 5s linear infinite;
   }
 }
 
@@ -211,6 +212,19 @@ All colors MUST be HSL. Clean, professional, enterprise-grade.
     }
   100% {
     transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateY(-100%);
+    }
+  }
+  @keyframes meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+    }
+  70% {
+    opacity: 1;
+    }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
     }
   }
 }

@@ -1,5 +1,4 @@
 import { Phone, Mail, Shield, Award, Clock, Building2 } from "lucide-react";
-import vaspernetsLogo from "@/assets/vaspernet-logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +11,9 @@ export const Footer = () => {
           <div className="lg:col-span-2 space-y-6">
             <div>
               <img 
-                src={vaspernetsLogo} 
+                src="/logo.png" 
                 alt="VasperNet Technology" 
-                className="h-10 w-auto mb-6 brightness-0 invert"
+                className="h-16 w-auto mb-6 brightness-0 invert"
               />
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
                 Trusted enterprise technology partner delivering innovative IT solutions 

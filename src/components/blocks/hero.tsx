@@ -148,8 +148,8 @@ export default function Globe3D() {
           <span className="mb-6 mt-10 md:mt-16 inline-block rounded-full border border-[#1976d2]/40 px-4 py-2 text-xs md:text-base text-[#1976d2] bg-white/5">
             ENTERPRISE-GRADE IT SOLUTIONS
           </span>
-          <h1 className="mx-auto mb-8 max-w-4xl text-2xl md:text-5xl lg:text-7xl font-light text-white">
-            Everything you need in <span className="text-[#1976d2]">Cybersecurity & IT</span>
+          <h1 className="mx-auto mb-8 max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light text-white">
+            Everything you need in<br className="block sm:hidden" /> <span className="text-[#1976d2]">Cybersecurity & IT</span>
           </h1>
           <p className="mx-auto mb-12 max-w-2xl text-base md:text-xl text-white/80">
             Empowering enterprises with comprehensive technology solutions. Trusted by industry leaders for reliability, security, and innovation.

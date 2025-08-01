@@ -48,7 +48,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
               }}
               animate={{
                 backgroundColor: "rgba(255,255,255,0)",
-                transition: { duration: 1 },
+                transition: { duration: 0.2 },
               }}
               key={`col` + j}
               className="w-16 h-8 border-r border-t border-slate-700 relative"

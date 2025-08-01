@@ -52,22 +52,17 @@ export const Portfolio = () => {
     <section id="portfolio" className="corporate-section bg-gradient-corporate">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Proven <span className="text-corporate-gradient">Results</span>
-          </h2>
-          <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
-            Transforming enterprise technology landscapes with measurable outcomes. 
-            Trusted by industry leaders to deliver complex, mission-critical solutions.
-          </p>
+        <div className="text-center mb-10 animate-fade-up">
+          <h2 className="text-5xl font-extrabold text-[#111] mb-4 bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Proven <span className="text-[#1976d2]">Results</span></h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-medium">Transforming enterprise technology landscapes with measurable outcomes. Trusted by industry leaders to deliver complex, mission-critical solutions.</p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="corporate-card p-8 h-full flex flex-col animate-scale-subtle"
+              className="corporate-card p-8 h-full flex flex-col animate-scale-subtle glassmorphism-card"
             >
               {/* Icon & Industry */}
               <div className="flex items-center justify-between mb-6">
@@ -81,7 +76,7 @@ export const Portfolio = () => {
               
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-4 text-foreground">
+                <h3 className="text-xl font-bold text-[#111] mb-4">
                   {project.title}
                 </h3>
                 <p className="text-corporate-gray mb-6 leading-relaxed text-sm">
@@ -110,57 +105,23 @@ export const Portfolio = () => {
         </div>
 
         {/* Results Summary */}
-        <div className="bg-white rounded-2xl shadow-corporate-lg p-8 md:p-12 mb-16">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Enterprise Impact</h3>
-            <p className="text-corporate-gray">Delivering measurable value across Fortune 500 organizations</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white/80 backdrop-blur-xl rounded-2xl shadow-corporate-lg p-6 md:p-8 mb-8 border border-blue-100/40 glassmorphism-card animate-fade-up">
+          <div className="flex-1 flex flex-wrap justify-center gap-8 md:gap-12">
             {[
-              { number: "500+", label: "Enterprise Projects", icon: <TrendingUp className="w-6 h-6 text-trust-gold" /> },
-              { number: "$2.5B", label: "Cost Savings Delivered", icon: <Database className="w-6 h-6 text-trust-gold" /> },
-              { number: "99.9%", label: "Average Uptime", icon: <Shield className="w-6 h-6 text-trust-gold" /> },
-              { number: "98%", label: "Client Retention", icon: <Server className="w-6 h-6 text-trust-gold" /> }
+              { number: "500+", label: "Enterprise Projects", icon: <TrendingUp className="w-7 h-7 text-blue-500" /> },
+              { number: "$2.5B", label: "Cost Savings Delivered", icon: <Database className="w-7 h-7 text-cyan-500" /> },
+              { number: "99.9%", label: "Average Uptime", icon: <Shield className="w-7 h-7 text-green-500" /> },
+              { number: "98%", label: "Client Retention", icon: <Server className="w-7 h-7 text-purple-500" /> }
             ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="flex justify-center mb-2">
-                  {stat.icon}
-                </div>
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-corporate-gray font-medium text-sm">
-                  {stat.label}
-                </div>
+              <div key={stat.label} className="text-center min-w-[120px]">
+                <div className="flex justify-center mb-2">{stat.icon}</div>
+                <div className="text-3xl md:text-4xl font-extrabold text-transparent bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-600 bg-clip-text mb-1">{stat.number}</div>
+                <div className="text-gray-700 font-medium text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <h3 className="text-3xl font-bold mb-4 text-foreground">
-            Ready to Achieve Similar Results?
-          </h3>
-          <p className="text-corporate-gray mb-8 text-lg max-w-2xl mx-auto">
-            Our enterprise solutions team is ready to assess your technology landscape 
-            and design a strategic transformation roadmap.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="gradient-primary-subtle text-white font-semibold px-8 py-3 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
-            >
-              Schedule Assessment
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3"
-            >
-              Download Portfolio
-            </Button>
+          <div className="mt-6 md:mt-0 md:ml-8 flex-shrink-0">
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">Contact Our Experts</Button>
           </div>
         </div>
       </div>

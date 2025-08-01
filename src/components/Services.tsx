@@ -10,6 +10,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import React from "react"; // Added missing import for React
 
 export const Services = () => {
   const services = [
@@ -70,27 +71,29 @@ export const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={service.title}
-              className="corporate-card p-8 h-full flex flex-col animate-scale-subtle"
+              className="relative rounded-2xl shadow-2xl border-0 bg-white/95 p-8 flex flex-col h-full animate-scale-subtle transition-all duration-300 group overflow-hidden"
             >
+              {/* Gradient top border */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#133a7c] via-black to-[#1976d2] rounded-t-2xl" />
               {/* Icon */}
-              <div className="mb-6 p-4 bg-trust-light rounded-xl w-fit">
-                {service.icon}
+              <div className="mb-6 p-4 bg-gradient-to-br from-[#133a7c]/10 to-[#1976d2]/10 rounded-xl w-fit flex items-center justify-center shadow-md">
+                {React.cloneElement(service.icon, { className: 'w-10 h-10 text-[#133a7c]' })}
               </div>
               
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-4 text-foreground">
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
                   {service.title}
                 </h3>
-                <p className="text-corporate-gray mb-6 leading-relaxed">
+                <p className="text-gray-500 mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
                 {/* Features */}
                 <ul className="space-y-3 mb-6">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-corporate-gray">
-                      <CheckCircle className="w-4 h-4 text-trust-gold mr-3 flex-shrink-0" />
+                    <li key={feature} className="flex items-center text-sm text-gray-700">
+                      <CheckCircle className="w-4 h-4 text-[#133a7c] mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
@@ -100,7 +103,7 @@ export const Services = () => {
               {/* CTA */}
               <Button 
                 variant="outline" 
-                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+                className="w-full border-[#133a7c] text-[#133a7c] hover:bg-[#133a7c] hover:text-white transition-all duration-200 font-semibold rounded-xl"
               >
                 Learn More
                 <ArrowRight className="ml-2 w-4 h-4" />

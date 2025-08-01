@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Shield } from "lucide-react";
-import vaspernetsLogo from "@/assets/vaspernet-logo.png";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +19,9 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={vaspernetsLogo} 
+              src="/logo.png" 
               alt="VasperNet Technology" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
