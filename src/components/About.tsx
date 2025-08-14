@@ -76,7 +76,7 @@ export const About = () => {
 
   return (
     <section id="about" className="corporate-section bg-background">
-      <div className="container mx-auto px-6">
+      <div className="w-full px-6">
         {/* Section Header - Typewriter Effect, Demo Style */}
         <div className="flex flex-col items-center justify-center mb-16">
           <p className="text-neutral-500 text-sm mb-2">

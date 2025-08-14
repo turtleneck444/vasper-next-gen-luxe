@@ -22,7 +22,8 @@ import {
   AlertTriangle,
   Zap,
   Globe,
-  Server
+  Server,
+  Palette
 } from "lucide-react";
 
 // Import admin page components
@@ -36,6 +37,7 @@ import AdminAnalytics from "./admin/AdminAnalytics";
 import AdminAuditLogs from "./admin/AdminAuditLogs";
 import AdminUserManagement from "./admin/AdminUserManagement";
 import AdminSettings from "./admin/AdminSettings";
+import AdminBrandGuidelines from "./admin/AdminBrandGuidelines";
 
 // Professional Cybersecurity Sidebar
 function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean; toggleSidebar: () => void }) {
@@ -119,6 +121,17 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean; toggleSidebar: ()
           href: "/admin/settings", 
           icon: Settings,
           description: "Security settings"
+        }
+      ]
+    },
+    {
+      title: "DESIGN & BRANDING",
+      items: [
+        { 
+          label: "Brand Guidelines", 
+          href: "/admin/brand-guidelines", 
+          icon: Palette,
+          description: "Design system & brand assets"
         }
       ]
     }
@@ -475,6 +488,7 @@ export default function AdminDashboard() {
               <Route path="/audit-logs" element={<AdminAuditLogs />} />
               <Route path="/user-management" element={<AdminUserManagement />} />
               <Route path="/settings" element={<AdminSettings />} />
+              <Route path="/brand-guidelines" element={<AdminBrandGuidelines />} />
             </Routes>
           </div>
         </main>

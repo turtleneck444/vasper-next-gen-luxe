@@ -50,7 +50,7 @@ export const Portfolio = () => {
 
   return (
     <section id="portfolio" className="corporate-section bg-gradient-corporate">
-      <div className="container mx-auto px-6">
+      <div className="w-full px-6">
         {/* Section Header */}
         <div className="text-center mb-10 animate-fade-up">
           <h2 className="text-5xl font-extrabold text-[#111] mb-4 bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Proven <span className="text-[#1976d2]">Results</span></h2>

@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
-      <div className="container mx-auto px-4 md:px-8 pt-8 md:pt-20">
+      <div className="w-full px-4 md:px-8 pt-8 md:pt-20">
         <TextGenerateEffect
           words={"Empowering Fortune 500 enterprises with world\u00A0class Cybersecurity, Cloud Computing, and Network Management."}
           className="text-center text-sm md:text-xl lg:text-2xl font-bold mb-0 text-[#003366] max-w-4xl mx-auto leading-tight"

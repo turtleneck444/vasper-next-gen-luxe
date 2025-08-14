@@ -49,7 +49,7 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="corporate-section bg-background">
-      <div className="container mx-auto px-6">
+      <div className="w-full px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="font-extrabold text-[#111] text-4xl md:text-5xl mb-6">

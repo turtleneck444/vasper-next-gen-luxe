@@ -139,7 +139,7 @@ export default function Globe3D() {
       {/* Animated background */}
       <Boxes />
       {/* Hero content */}
-      <div className="relative z-10 container mx-auto max-w-2xl px-4 text-center md:max-w-4xl md:px-6 lg:max-w-7xl pointer-events-none">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 text-center md:px-6 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
