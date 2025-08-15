@@ -707,6 +707,270 @@ const luxuryBrands = {
       },
       semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
     }
+  },
+  quantumstorm: {
+    name: "QuantumStorm",
+    tagline: "Unleashing Digital Tempests",
+    description: "Harness the raw power of quantum storms to obliterate cyber threats with devastating precision",
+    industry: "Quantum Meteorology & Storm Security",
+    personality: "Devastating, Powerful, Unstoppable",
+    founded: 2024,
+    website: "quantumstorm.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        storm: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        },
+        lightning: {
+          50: "#fefce8", 100: "#fef9c3", 200: "#fef08a", 300: "#fde047",
+          400: "#facc15", 500: "#eab308", 600: "#ca8a04", 700: "#a16207",
+          800: "#854d0e", 900: "#713f12", 950: "#422006"
+        }
+      },
+      accent: {
+        thunder: "#eab308", tempest: "#ca8a04", fury: "#a16207", rage: "#854d0e"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumnova: {
+    name: "QuantumNova",
+    tagline: "Stellar Explosion Security",
+    description: "Explosive quantum energy bursts that incinerate threats with the power of a supernova",
+    industry: "Quantum Astrophysics & Stellar Security",
+    personality: "Explosive, Brilliant, Cosmic",
+    founded: 2023,
+    website: "quantumnova.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        nova: {
+          50: "#fff7ed", 100: "#ffedd5", 200: "#fed7aa", 300: "#fdba74",
+          400: "#fb923c", 500: "#f97316", 600: "#ea580c", 700: "#c2410c",
+          800: "#9a3412", 900: "#7c2d12", 950: "#431407"
+        },
+        stellar: {
+          50: "#fffbeb", 100: "#fef3c7", 200: "#fde68a", 300: "#fcd34d",
+          400: "#fbbf24", 500: "#f59e0b", 600: "#d97706", 700: "#b45309",
+          800: "#92400e", 900: "#78350f", 950: "#451a03"
+        }
+      },
+      accent: {
+        explosion: "#f97316", burst: "#f59e0b", flare: "#ea580c", blaze: "#d97706"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumtitan: {
+    name: "QuantumTitan",
+    tagline: "Colossal Digital Fortress",
+    description: "Titanic quantum constructs providing impenetrable security with the strength of giants",
+    industry: "Quantum Architecture & Titan Security",
+    personality: "Colossal, Invincible, Mighty",
+    founded: 2022,
+    website: "quantumtitan.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        titan: {
+          50: "#fafaf9", 100: "#f5f5f4", 200: "#e7e5e4", 300: "#d6d3d1",
+          400: "#a8a29e", 500: "#78716c", 600: "#57534e", 700: "#44403c",
+          800: "#292524", 900: "#1c1917", 950: "#0c0a09"
+        },
+        colossus: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        }
+      },
+      accent: {
+        mighty: "#78716c", colossal: "#64748b", giant: "#57534e", massive: "#475569"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumforge: {
+    name: "QuantumForge",
+    tagline: "Forging Unbreakable Security",
+    description: "Quantum forges crafting impenetrable security solutions with molecular precision",
+    industry: "Quantum Manufacturing & Forge Security",
+    personality: "Crafted, Precision, Unbreakable",
+    founded: 2023,
+    website: "quantumforge.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        forge: {
+          50: "#fef2f2", 100: "#fee2e2", 200: "#fecaca", 300: "#fca5a5",
+          400: "#f87171", 500: "#ef4444", 600: "#dc2626", 700: "#b91c1c",
+          800: "#991b1b", 900: "#7f1d1d", 950: "#450a0a"
+        },
+        molten: {
+          50: "#fff7ed", 100: "#ffedd5", 200: "#fed7aa", 300: "#fdba74",
+          400: "#fb923c", 500: "#f97316", 600: "#ea580c", 700: "#c2410c",
+          800: "#9a3412", 900: "#7c2d12", 950: "#431407"
+        }
+      },
+      accent: {
+        hammer: "#ef4444", anvil: "#f97316", smelt: "#dc2626", craft: "#ea580c"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantuminfinity: {
+    name: "QuantumInfinity",
+    tagline: "Limitless Security Dimensions",
+    description: "Infinite quantum loops creating boundless protection across unlimited security dimensions",
+    industry: "Quantum Mathematics & Infinite Security",
+    personality: "Limitless, Eternal, Boundless",
+    founded: 2024,
+    website: "quantuminfinity.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        infinity: {
+          50: "#f0f9ff", 100: "#e0f2fe", 200: "#bae6fd", 300: "#7dd3fc",
+          400: "#38bdf8", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1",
+          800: "#075985", 900: "#0c4a6e", 950: "#082f49"
+        },
+        eternal: {
+          50: "#ecfdf5", 100: "#d1fae5", 200: "#a7f3d0", 300: "#6ee7b7",
+          400: "#34d399", 500: "#10b981", 600: "#059669", 700: "#047857",
+          800: "#065f46", 900: "#064e3b", 950: "#022c22"
+        }
+      },
+      accent: {
+        endless: "#0ea5e9", boundless: "#10b981", unlimited: "#38bdf8", eternal: "#059669"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumphoenix: {
+    name: "QuantumPhoenix",
+    tagline: "Rising From Digital Ashes",
+    description: "Self-regenerating quantum security that rises stronger from every cyber attack",
+    industry: "Quantum Regeneration & Phoenix Security",
+    personality: "Resilient, Reborn, Immortal",
+    founded: 2023,
+    website: "quantumphoenix.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        phoenix: {
+          50: "#fef2f2", 100: "#fee2e2", 200: "#fecaca", 300: "#fca5a5",
+          400: "#f87171", 500: "#ef4444", 600: "#dc2626", 700: "#b91c1c",
+          800: "#991b1b", 900: "#7f1d1d", 950: "#450a0a"
+        },
+        rebirth: {
+          50: "#fff7ed", 100: "#ffedd5", 200: "#fed7aa", 300: "#fdba74",
+          400: "#fb923c", 500: "#f97316", 600: "#ea580c", 700: "#c2410c",
+          800: "#9a3412", 900: "#7c2d12", 950: "#431407"
+        }
+      },
+      accent: {
+        flames: "#ef4444", resurrection: "#f97316", immortal: "#dc2626", eternal: "#ea580c"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumapex: {
+    name: "QuantumApex",
+    tagline: "Peak Security Performance",
+    description: "Quantum systems operating at peak performance, reaching the apex of cybersecurity excellence",
+    industry: "Quantum Performance & Apex Security",
+    personality: "Peak, Excellence, Superior",
+    founded: 2024,
+    website: "quantumapex.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        apex: {
+          50: "#f0fdf4", 100: "#dcfce7", 200: "#bbf7d0", 300: "#86efac",
+          400: "#4ade80", 500: "#22c55e", 600: "#16a34a", 700: "#15803d",
+          800: "#166534", 900: "#14532d", 950: "#052e16"
+        },
+        summit: {
+          50: "#ecfdf5", 100: "#d1fae5", 200: "#a7f3d0", 300: "#6ee7b7",
+          400: "#34d399", 500: "#10b981", 600: "#059669", 700: "#047857",
+          800: "#065f46", 900: "#064e3b", 950: "#022c22"
+        }
+      },
+      accent: {
+        peak: "#22c55e", zenith: "#10b981", pinnacle: "#16a34a", crown: "#059669"
+      },
+      semantic: { success: "#22c55e", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  quantumedge: {
+    name: "QuantumEdge",
+    tagline: "Cutting-Edge Quantum Defense",
+    description: "Sharp quantum edges slicing through threats with precision and cutting-edge technology",
+    industry: "Quantum Precision & Edge Security",
+    personality: "Sharp, Precise, Cutting-Edge",
+    founded: 2023,
+    website: "quantumedge.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        edge: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        },
+        blade: {
+          50: "#ecfcff", 100: "#cffafe", 200: "#a5f3fc", 300: "#67e8f9",
+          400: "#22d3ee", 500: "#06b6d4", 600: "#0891b2", 700: "#0e7490",
+          800: "#155e75", 900: "#164e63", 950: "#083344"
+        }
+      },
+      accent: {
+        sharp: "#64748b", razor: "#06b6d4", slice: "#475569", cut: "#0891b2"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
   }
 };
 
