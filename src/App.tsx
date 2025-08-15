@@ -4,6 +4,7 @@ import Index from "./pages/Index";
 import { Services } from "./pages/Services";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 import AdminDashboard from "./components/AdminDashboard";
 import "./App.css";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin/*" element={<AdminDashboard />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
