@@ -24,13 +24,13 @@ export const Hero = () => {
         
         {/* Main Heading */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Everything you need in{" "}
-          <span className="text-corporate-gradient">IT</span>
+          Virtual IT Director &{" "}
+          <span className="text-corporate-gradient">Enterprise Services</span>
         </h1>
         
         {/* Subheading */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-          Empowering enterprises with comprehensive technology solutions. 
+          Strategic IT leadership, comprehensive technology solutions, and 24/7 support. 
           Trusted by industry leaders for reliability, security, and innovation.
         </p>
         

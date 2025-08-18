@@ -309,6 +309,52 @@ export const Services = () => {
                 </Card>
               ))}
             </div>
+
+            {/* Additional Expanded Services */}
+            <div className="mt-16 grid md:grid-cols-4 gap-6">
+              {[
+                {
+                  icon: Database,
+                  title: "SaaS Management",
+                  description: "Complete Software-as-a-Service lifecycle management",
+                  features: ["License Optimization", "User Access Control", "Cost Management", "Integration Support"]
+                },
+                {
+                  icon: Shield,
+                  title: "Advanced Cybersecurity",
+                  description: "Comprehensive security operations and threat intelligence",
+                  features: ["SOC Services", "Threat Hunting", "Incident Response", "Security Audits"]
+                },
+                {
+                  icon: Network,
+                  title: "Network Security",
+                  description: "Network-level protection and monitoring services",
+                  features: ["Firewall Management", "Intrusion Detection", "VPN Solutions", "Network Monitoring"]
+                },
+                {
+                  icon: Smartphone,
+                  title: "Office Suite Management",
+                  description: "Complete management of Microsoft 365, Google Workspace",
+                  features: ["Deployment & Migration", "User Training", "Security Configuration", "Ongoing Support"]
+                }
+              ].map((service, index) => (
+                <Card key={service.title} className="p-6 hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-blue-300">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                    <service.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                  <div className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="w-3 h-3 text-green-600 flex-shrink-0" />
+                        <span className="text-xs text-gray-600">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>

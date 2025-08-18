@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Shield } from "lucide-react";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +57,7 @@ export const Navigation = () => {
                 <span>(555) 123-4567</span>
               </div>
             </div>
+            <LanguageSelector />
             <Button className="gradient-primary-subtle text-white hover:shadow-corporate transition-all duration-200">
               Get Quote
             </Button>

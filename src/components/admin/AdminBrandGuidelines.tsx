@@ -971,6 +971,348 @@ const luxuryBrands = {
       },
       semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
     }
+  },
+  
+  // Quantum & Animal-Inspired Brand Concepts
+  quantumsquirrel: {
+    name: "QuantumSquirrel",
+    tagline: "Agile Computing Solutions",
+    description: "Lightning-fast technology solutions with the agility and intelligence of nature's greatest problem-solvers. Combining quantum-level precision with natural adaptability.",
+    industry: "Agile Computing & Natural Intelligence",
+    personality: "Agile, Resourceful, Intelligent",
+    founded: 2024,
+    website: "quantumsquirrel.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        bark: {
+          50: "#fef7ed", 100: "#feebd2", 200: "#fed7aa", 300: "#fdba74",
+          400: "#fb923c", 500: "#f97316", 600: "#ea580c", 700: "#c2410c",
+          800: "#9a3412", 900: "#7c2d12", 950: "#431407"
+        },
+        forest: {
+          50: "#f0fdf4", 100: "#dcfce7", 200: "#bbf7d0", 300: "#86efac",
+          400: "#4ade80", 500: "#22c55e", 600: "#16a34a", 700: "#15803d",
+          800: "#166534", 900: "#14532d", 950: "#052e16"
+        }
+      },
+      accent: {
+        acorn: "#d4af37", tail: "#8b4513", nimble: "#228b22", clever: "#cd853f"
+      },
+      semantic: { success: "#22c55e", warning: "#f97316", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  
+  quantumshark: {
+    name: "QuantumShark",
+    tagline: "Predatory Precision Technology",
+    description: "Cutting-edge solutions that move with the precision and power of apex predators. Designed for enterprises that demand dominance in their market.",
+    industry: "Apex Technology & Precision Systems",
+    personality: "Powerful, Efficient, Dominant",
+    founded: 2024,
+    website: "quantumshark.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        ocean: {
+          50: "#f0f9ff", 100: "#e0f2fe", 200: "#bae6fd", 300: "#7dd3fc",
+          400: "#38bdf8", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1",
+          800: "#075985", 900: "#0c4a6e", 950: "#082f49"
+        },
+        steel: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        }
+      },
+      accent: {
+        fin: "#1e40af", teeth: "#f8fafc", power: "#0c4a6e", hunt: "#075985"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#0ea5e9" }
+    }
+  },
+  
+  quantumeagle: {
+    name: "QuantumEagle",
+    tagline: "Soaring Above The Competition",
+    description: "High-altitude technology solutions with eagle-eye precision and soaring performance capabilities for visionary enterprises.",
+    industry: "Visionary Technology & Precision Systems",
+    personality: "Visionary, Powerful, Precise",
+    founded: 2024,
+    website: "quantumeagle.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        golden: {
+          50: "#fffbeb", 100: "#fef3c7", 200: "#fde68a", 300: "#fcd34d",
+          400: "#fbbf24", 500: "#f59e0b", 600: "#d97706", 700: "#b45309",
+          800: "#92400e", 900: "#78350f", 950: "#451a03"
+        },
+        storm: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        }
+      },
+      accent: {
+        sky: "#0ea5e9", talon: "#451a03", flight: "#3b82f6", soar: "#38bdf8"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  
+  quantumpanther: {
+    name: "QuantumPanther",
+    tagline: "Stealth Technology Solutions",
+    description: "Sleek, powerful, and mysterious - technology solutions that move with the grace and power of the panther. Perfect for enterprises requiring discretion and strength.",
+    industry: "Stealth Technology & Covert Systems",
+    personality: "Stealth, Power, Elegance",
+    founded: 2024,
+    website: "quantumpanther.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        shadow: {
+          50: "#faf5ff", 100: "#f3e8ff", 200: "#e9d5ff", 300: "#d8b4fe",
+          400: "#c084fc", 500: "#a855f7", 600: "#9333ea", 700: "#7c3aed",
+          800: "#6b21a8", 900: "#581c87", 950: "#3b0764"
+        },
+        midnight: {
+          50: "#f8fafc", 100: "#f1f5f9", 200: "#e2e8f0", 300: "#cbd5e1",
+          400: "#94a3b8", 500: "#64748b", 600: "#475569", 700: "#334155",
+          800: "#1e293b", 900: "#0f172a", 950: "#020617"
+        }
+      },
+      accent: {
+        gold: "#d4af37", stealth: "#3b0764", prowl: "#581c87", strike: "#7c3aed"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#a855f7" }
+    }
+  },
+  
+  quantumdolphin: {
+    name: "QuantumDolphin",
+    tagline: "Intelligent Fluid Computing",
+    description: "Smart, communicative, and adaptive - technology solutions that flow seamlessly through complex enterprise environments with dolphin-like intelligence.",
+    industry: "Intelligent Computing & Adaptive Systems",
+    personality: "Intelligent, Communicative, Fluid",
+    founded: 2024,
+    website: "quantumdolphin.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        ocean: {
+          50: "#f0f9ff", 100: "#e0f2fe", 200: "#bae6fd", 300: "#7dd3fc",
+          400: "#38bdf8", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1",
+          800: "#075985", 900: "#0c4a6e", 950: "#082f49"
+        },
+        aqua: {
+          50: "#ecfdf5", 100: "#d1fae5", 200: "#a7f3d0", 300: "#6ee7b7",
+          400: "#34d399", 500: "#10b981", 600: "#059669", 700: "#047857",
+          800: "#065f46", 900: "#064e3b", 950: "#022c22"
+        }
+      },
+      accent: {
+        wave: "#38bdf8", splash: "#0ea5e9", flow: "#10b981", dive: "#0284c7"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#0ea5e9" }
+    }
+  },
+  
+  quantumfalcon: {
+    name: "QuantumFalcon",
+    tagline: "High-Speed Precision Systems",
+    description: "The fastest, most precise technology solutions inspired by nature's speed champion. Built for enterprises that can't afford to wait.",
+    industry: "High-Speed Computing & Precision Systems",
+    personality: "Speed, Precision, Focus",
+    founded: 2024,
+    website: "quantumfalcon.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        falcon: {
+          50: "#fef2f2", 100: "#fee2e2", 200: "#fecaca", 300: "#fca5a5",
+          400: "#f87171", 500: "#ef4444", 600: "#dc2626", 700: "#b91c1c",
+          800: "#991b1b", 900: "#7f1d1d", 950: "#450a0a"
+        },
+        cream: {
+          50: "#fffbeb", 100: "#fef3c7", 200: "#fde68a", 300: "#fcd34d",
+          400: "#fbbf24", 500: "#f59e0b", 600: "#d97706", 700: "#b45309",
+          800: "#92400e", 900: "#78350f", 950: "#451a03"
+        }
+      },
+      accent: {
+        speed: "#ef4444", precision: "#0ea5e9", focus: "#dc2626", swift: "#b91c1c"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#3b82f6" }
+    }
+  },
+  
+  // More Quantum Scale Variations
+  quantumscaledynamics: {
+    name: "QuantumScale Dynamics",
+    tagline: "Dynamic Scaling Solutions",
+    description: "Advanced quantum scaling with dynamic adaptation capabilities. Technology that evolves with your business at quantum speed.",
+    industry: "Dynamic Computing & Adaptive Systems",
+    personality: "Dynamic, Adaptive, Evolving",
+    founded: 2024,
+    website: "quantumscaledynamics.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        dynamic: {
+          50: "#faf5ff", 100: "#f3e8ff", 200: "#e9d5ff", 300: "#d8b4fe",
+          400: "#c084fc", 500: "#a855f7", 600: "#9333ea", 700: "#7c3aed",
+          800: "#6b21a8", 900: "#581c87", 950: "#3b0764"
+        },
+        scale: {
+          50: "#f0fdf4", 100: "#dcfce7", 200: "#bbf7d0", 300: "#86efac",
+          400: "#4ade80", 500: "#22c55e", 600: "#16a34a", 700: "#15803d",
+          800: "#166534", 900: "#14532d", 950: "#052e16"
+        }
+      },
+      accent: {
+        growth: "#22c55e", adapt: "#a855f7", evolve: "#4ade80", transform: "#9333ea"
+      },
+      semantic: { success: "#22c55e", warning: "#f59e0b", error: "#ef4444", info: "#a855f7" }
+    }
+  },
+  
+  quantumscalevector: {
+    name: "QuantumScale Vector",
+    tagline: "Directional Growth Technology",
+    description: "Precise directional scaling with quantum vector analysis. Technology solutions that know exactly where your business needs to go.",
+    industry: "Vector Computing & Directional Systems",
+    personality: "Directional, Precise, Strategic",
+    founded: 2024,
+    website: "quantumscalevector.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        vector: {
+          50: "#f0f9ff", 100: "#e0f2fe", 200: "#bae6fd", 300: "#7dd3fc",
+          400: "#38bdf8", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1",
+          800: "#075985", 900: "#0c4a6e", 950: "#082f49"
+        },
+        direction: {
+          50: "#ecfdf5", 100: "#d1fae5", 200: "#a7f3d0", 300: "#6ee7b7",
+          400: "#34d399", 500: "#10b981", 600: "#059669", 700: "#047857",
+          800: "#065f46", 900: "#064e3b", 950: "#022c22"
+        }
+      },
+      accent: {
+        arrow: "#0ea5e9", path: "#10b981", target: "#0284c7", aim: "#059669"
+      },
+      semantic: { success: "#10b981", warning: "#f59e0b", error: "#ef4444", info: "#0ea5e9" }
+    }
+  },
+  
+  quantumscalematrix: {
+    name: "QuantumScale Matrix",
+    tagline: "Multi-Dimensional IT Solutions",
+    description: "Complex multi-dimensional scaling with quantum matrix calculations. Technology that operates across all dimensions of your enterprise.",
+    industry: "Matrix Computing & Multi-Dimensional Systems",
+    personality: "Multi-dimensional, Complex, Interconnected",
+    founded: 2024,
+    website: "quantumscalematrix.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        matrix: {
+          50: "#faf5ff", 100: "#f3e8ff", 200: "#e9d5ff", 300: "#d8b4fe",
+          400: "#c084fc", 500: "#a855f7", 600: "#9333ea", 700: "#7c3aed",
+          800: "#6b21a8", 900: "#581c87", 950: "#3b0764"
+        },
+        dimension: {
+          50: "#f0fdf4", 100: "#dcfce7", 200: "#bbf7d0", 300: "#86efac",
+          400: "#4ade80", 500: "#22c55e", 600: "#16a34a", 700: "#15803d",
+          800: "#166534", 900: "#14532d", 950: "#052e16"
+        }
+      },
+      accent: {
+        grid: "#a855f7", node: "#22c55e", connection: "#c084fc", network: "#4ade80"
+      },
+      semantic: { success: "#22c55e", warning: "#f59e0b", error: "#ef4444", info: "#a855f7" }
+    }
+  },
+  
+  quantumscaleprism: {
+    name: "QuantumScale Prism",
+    tagline: "Spectrum Technology Solutions",
+    description: "Break down complex IT challenges into manageable spectrums. Like light through a prism, we reveal all aspects of your technology needs.",
+    industry: "Spectrum Computing & Analytical Systems",
+    personality: "Analytical, Revealing, Comprehensive",
+    founded: 2024,
+    website: "quantumscaleprism.com",
+    typography: {
+      primary: "Inter",
+      secondary: "Inter",
+      mono: "JetBrains Mono",
+      weights: { light: 300, regular: 400, medium: 500, semibold: 600, bold: 700 }
+    },
+    colors: {
+      primary: {
+        prism: {
+          50: "#fef7ed", 100: "#feebd2", 200: "#fed7aa", 300: "#fdba74",
+          400: "#fb923c", 500: "#f97316", 600: "#ea580c", 700: "#c2410c",
+          800: "#9a3412", 900: "#7c2d12", 950: "#431407"
+        },
+        spectrum: {
+          50: "#f0f9ff", 100: "#e0f2fe", 200: "#bae6fd", 300: "#7dd3fc",
+          400: "#38bdf8", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1",
+          800: "#075985", 900: "#0c4a6e", 950: "#082f49"
+        }
+      },
+      accent: {
+        rainbow: "#f97316", light: "#0ea5e9", refract: "#38bdf8", beam: "#fb923c"
+      },
+      semantic: { success: "#10b981", warning: "#f97316", error: "#ef4444", info: "#0ea5e9" }
+    }
   }
 };
 
