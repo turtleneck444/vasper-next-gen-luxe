@@ -8,6 +8,9 @@ import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { OutageCTA } from "@/components/OutageCTA";
 import { VirtualITDirector } from "@/components/VirtualITDirector";
+import { SecurityServices } from "@/components/SecurityServices";
+import { SocialMediaServices } from "@/components/SocialMediaServices";
+import { TidioChat } from "@/components/TidioChat";
 
 export const Home = () => {
   return (
@@ -21,11 +24,14 @@ export const Home = () => {
         </div>
       </div>
       <VirtualITDirector />
+      <SecurityServices />
+      <SocialMediaServices />
       <About />
       <Services />
       <Portfolio />
       <Contact />
       <Footer />
+      <TidioChat />
     </div>
   );
 };
