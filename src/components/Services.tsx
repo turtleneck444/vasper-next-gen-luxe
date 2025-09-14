@@ -16,39 +16,39 @@ export const Services = () => {
   const services = [
     {
       icon: <Shield className="w-10 h-10 text-trust-gold" />,
-      title: "Cybersecurity",
-      description: "Enterprise-grade security solutions to protect your digital assets and ensure regulatory compliance.",
-      features: ["Threat Intelligence", "Security Operations Center", "Compliance Management", "Incident Response"]
-    },
-    {
-      icon: <Cloud className="w-10 h-10 text-trust-gold" />,
-      title: "Cloud Solutions",
-      description: "Strategic cloud adoption and migration services designed for enterprise scalability and efficiency.",
-      features: ["Cloud Strategy", "Multi-Cloud Management", "DevOps Integration", "Cost Optimization"]
-    },
-    {
-      icon: <Network className="w-10 h-10 text-trust-gold" />,
-      title: "Infrastructure Management", 
-      description: "Comprehensive infrastructure services ensuring optimal performance and reliability for mission-critical operations.",
-      features: ["Network Architecture", "Performance Monitoring", "Capacity Planning", "Infrastructure Security"]
-    },
-    {
-      icon: <Server className="w-10 h-10 text-trust-gold" />,
-      title: "Enterprise Infrastructure",
-      description: "Robust infrastructure solutions designed for high availability and enterprise-scale operations.",
-      features: ["Data Center Services", "Virtualization", "Backup & Recovery", "Business Continuity"]
-    },
-    {
-      icon: <Smartphone className="w-10 h-10 text-trust-gold" />,
-      title: "Digital Transformation",
-      description: "Strategic consulting and implementation services to modernize your technology landscape.",
-      features: ["Legacy Modernization", "Process Automation", "Digital Strategy", "Change Management"]
+      title: "Virtual IT Director",
+      description: "Strategic IT leadership and management without the overhead. Get C-level expertise for vendor selection, technology strategy, and IT governance.",
+      features: ["Vendor Management & Selection", "Technology Strategy & Planning", "IT Budget Management", "Environment Monitoring & Alerts"]
     },
     {
       icon: <Database className="w-10 h-10 text-trust-gold" />,
-      title: "Data & Analytics",
-      description: "Enterprise data solutions enabling informed decision-making and operational intelligence.",
-      features: ["Data Architecture", "Business Intelligence", "Advanced Analytics", "Data Governance"]
+      title: "SaaS Management",
+      description: "Complete Software-as-a-Service lifecycle management including license optimization, security, and user access control.",
+      features: ["License Optimization", "User Access Management", "Cost Control & Reporting", "Integration & Automation"]
+    },
+    {
+      icon: <Shield className="w-10 h-10 text-trust-gold" />,
+      title: "Cybersecurity",
+      description: "Enterprise-grade security solutions including 3-step authentication, threat intelligence, and compliance management.",
+      features: ["Multi-Factor Authentication", "Security Operations Center", "Compliance Management", "Incident Response"]
+    },
+    {
+      icon: <Network className="w-10 h-10 text-trust-gold" />,
+      title: "Network Security", 
+      description: "Comprehensive network protection with firewall management, intrusion detection, and continuous monitoring.",
+      features: ["Firewall Management", "Intrusion Detection", "VPN Solutions", "24/7 Network Monitoring"]
+    },
+    {
+      icon: <Cloud className="w-10 h-10 text-trust-gold" />,
+      title: "Cloud Computing",
+      description: "Strategic cloud adoption and migration services designed for enterprise scalability and cost efficiency.",
+      features: ["Cloud Strategy & Migration", "Multi-Cloud Management", "DevOps Integration", "Cost Optimization"]
+    },
+    {
+      icon: <Smartphone className="w-10 h-10 text-trust-gold" />,
+      title: "Office Suite Management",
+      description: "Complete management of Microsoft 365, Google Workspace, and other productivity suites with training and support.",
+      features: ["Deployment & Migration", "User Training & Support", "Security Configuration", "Ongoing Management"]
     }
   ];
 
@@ -58,11 +58,11 @@ export const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Enterprise <span className="text-corporate-gradient">IT Services</span>
+            Virtual IT Director <span className="text-corporate-gradient">& Managed Services</span>
           </h2>
           <p className="text-xl text-corporate-gray max-w-3xl mx-auto leading-relaxed">
-            Comprehensive technology solutions engineered for enterprise environments. 
-            Delivering reliability, security, and scalability at every level.
+            Get expert IT leadership and comprehensive managed services. From vendor management to environment monitoring - 
+            we handle it all so you can focus on your business.
           </p>
         </div>
 
@@ -115,24 +115,24 @@ export const Services = () => {
         {/* CTA Section */}
         <div className="text-center bg-white rounded-2xl shadow-corporate-lg p-12">
           <h3 className="text-3xl font-bold mb-4 text-foreground">
-            Ready to Modernize Your IT Infrastructure?
+            Need a Virtual IT Director or Emergency Support?
           </h3>
           <p className="text-corporate-gray mb-8 text-lg max-w-2xl mx-auto">
-            Our enterprise solutions team is ready to assess your needs and design a comprehensive technology strategy.
+            Get strategic IT leadership, vendor management, and 24/7 support. Perfect for business owners who need expert guidance without the overhead.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="gradient-primary-subtle text-white font-semibold px-8 py-3 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
             >
-              Schedule Consultation
+              Get Virtual IT Director
             </Button>
             <Button 
               size="lg" 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3"
             >
-              Download Brochure
+              Emergency Support
             </Button>
           </div>
         </div>

@@ -24,14 +24,14 @@ export const Hero = () => {
         
         {/* Main Heading */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Virtual IT Director &{" "}
-          <span className="text-corporate-gradient">Enterprise Services</span>
+          Virtual IT Director{" "}
+          <span className="text-corporate-gradient">Services</span>
         </h1>
         
         {/* Subheading */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-          Strategic IT leadership, comprehensive technology solutions, and 24/7 support. 
-          Trusted by industry leaders for reliability, security, and innovation.
+          Strategic IT leadership without the overhead. Expert vendor management, 
+          environment monitoring, and 24/7 emergency support for your business.
         </p>
         
         {/* Service Icons - Clean & Professional */}
@@ -40,19 +40,19 @@ export const Hero = () => {
             <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
               <Shield className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/80 font-medium">Cybersecurity</span>
+            <span className="text-sm text-white/80 font-medium">IT Strategy</span>
           </div>
           <div className="flex flex-col items-center gap-3 group">
             <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
               <Cloud className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/80 font-medium">Cloud Solutions</span>
+            <span className="text-sm text-white/80 font-medium">Vendor Management</span>
           </div>
           <div className="flex flex-col items-center gap-3 group">
             <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:bg-white/20 transition-all duration-300">
               <Network className="w-7 h-7 text-white" />
             </div>
-            <span className="text-sm text-white/80 font-medium">Infrastructure</span>
+            <span className="text-sm text-white/80 font-medium">24/7 Support</span>
           </div>
         </div>
         
@@ -62,7 +62,7 @@ export const Hero = () => {
             size="lg" 
             className="gradient-trust text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-corporate-lg hover:shadow-xl transition-all duration-300 group"
           >
-            Schedule Consultation
+            Get Virtual IT Director
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Button>
           <Button 
