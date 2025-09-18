@@ -4,7 +4,6 @@ import { usePerformance } from "./hooks/usePerformance";
 import { useMobilePerformance } from "./hooks/useMobilePerformance";
 import { SecurityProvider } from "./components/SecurityProvider";
 import ErrorBoundary from "./components/ErrorBoundary";
-import PageLoader from "./components/PageLoader";
 import Index from "./pages/Index";
 import { Services } from "./pages/Services";
 import { SharePoint } from "./pages/SharePoint";
@@ -21,21 +20,12 @@ import "./App.css";
 // ScrollToTop component to handle scroll restoration
 function ScrollToTop() {
   const { pathname } = useLocation();
-  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true);
     window.scrollTo(0, 0);
-    
-    // Simulate loading time to prevent white flash
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 100);
-
-    return () => clearTimeout(timer);
   }, [pathname]);
 
-  return <PageLoader isLoading={isLoading} />;
+  return null;
 }
 
 function App() {
