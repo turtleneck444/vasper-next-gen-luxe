@@ -102,7 +102,7 @@ export const SharePoint = () => {
                   Microsoft SharePoint Experts
                 </div>
                 
-                <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight headline-mobile">
                   Unlock Your Business Potential with 
                   <span className="text-corporate-gradient block">SharePoint Solutions</span>
                 </h1>
@@ -136,7 +136,7 @@ export const SharePoint = () => {
                     <div className="mb-4 p-3 bg-primary/10 rounded-lg w-fit">
                       {React.cloneElement(item.icon, { className: 'w-6 h-6 text-primary' })}
                     </div>
-                    <h3 className="font-semibold mb-2 text-foreground">{item.title}</h3>
+                    <h3 className="font-semibold mb-2 text-foreground headline-mobile">{item.title}</h3>
                     <p className="text-sm text-corporate-gray">{item.desc}</p>
                   </Card>
                 ))}
@@ -151,7 +151,7 @@ export const SharePoint = () => {
         <div className="w-full px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 headline-mobile">
                 Comprehensive SharePoint <span className="text-corporate-gradient">Services</span>
               </h2>
               <p className="text-xl text-corporate-gray max-w-3xl mx-auto">
@@ -172,7 +172,7 @@ export const SharePoint = () => {
                     {React.cloneElement(service.icon, { className: 'w-8 h-8 text-primary' })}
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                  <h3 className="text-xl font-bold mb-4 text-foreground headline-mobile">
                     {service.title}
                   </h3>
                   <p className="text-corporate-gray mb-6 leading-relaxed">
@@ -210,7 +210,7 @@ export const SharePoint = () => {
             <div className="grid lg:grid-cols-2 gap-16">
               {/* Benefits */}
               <div>
-                <h3 className="text-3xl font-bold mb-8 text-foreground">
+                <h3 className="text-3xl font-bold mb-8 text-foreground headline-mobile">
                   Why Choose SharePoint?
                 </h3>
                 <div className="space-y-4">
@@ -225,7 +225,7 @@ export const SharePoint = () => {
 
               {/* Industries */}
               <div>
-                <h3 className="text-3xl font-bold mb-8 text-foreground">
+                <h3 className="text-3xl font-bold mb-8 text-foreground headline-mobile">
                   Industries We Serve
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -246,7 +246,7 @@ export const SharePoint = () => {
       <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="w-full px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 headline-mobile">
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">

@@ -109,7 +109,7 @@ img {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     word-wrap: break-word;
-    hyphens: auto;
+    hyphens: none;
   }
   
   /* Improve form inputs on mobile */
@@ -276,5 +276,76 @@ img {
   img {
     max-width: 100% !important;
     page-break-inside: avoid;
+  }
+}
+
+/* Mobile headline optimization - prevent awkward line breaks */
+@media (max-width: 768px) {
+  /* Headlines should not break awkwardly */
+  h1, h2, h3, h4, h5, h6 {
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+  }
+  
+  /* Specific headline classes for better mobile wrapping */
+  .headline-mobile {
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+  }
+  
+  /* Prevent breaking on hyphens in compound words */
+  .no-break {
+    white-space: nowrap;
+  }
+  
+  /* Allow breaking only at natural word boundaries */
+  .smart-break {
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
+  }
+}
+
+/* Tablet headline optimization */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1, h2, h3, h4, h5, h6 {
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Additional mobile headline fixes */
+@media (max-width: 768px) {
+  /* Prevent breaking on hyphens in specific words */
+  .no-hyphen-break {
+    white-space: nowrap;
+  }
+  
+  /* Smart breaking for long headlines */
+  .headline-mobile {
+    word-spacing: 0.1em;
+  }
+  
+  /* Ensure proper spacing in compound words */
+  .compound-word {
+    white-space: nowrap;
+  }
+}
+
+/* Fix for specific problematic headlines */
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.1;
+  }
+  
+  .headline-mobile {
+    font-size: clamp(1.25rem, 3.5vw, 2rem);
+    line-height: 1.2;
   }
 }
