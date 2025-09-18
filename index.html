@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <title>Velora Tek - Enterprise Technology Solutions</title>
     <meta name="description" content="Leading provider of enterprise IT solutions including cybersecurity, cloud computing, SharePoint services, and network management. Trusted by Fortune 500 companies worldwide." />
     <meta name="author" content="Velora Tek" />
     <meta name="keywords" content="enterprise IT, cybersecurity, cloud computing, SharePoint, network management, managed services, digital transformation" />
 
-    <!-- Security Headers - Relaxed for better compatibility -->
+    <!-- Mobile-specific optimizations -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Velora Tek" />
+    <meta name="application-name" content="Velora Tek" />
+    <meta name="msapplication-TileColor" content="#1976d2" />
+    <meta name="theme-color" content="#1976d2" />
+    
+    <!-- Mobile performance hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Security Headers - Mobile optimized -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
@@ -16,21 +31,17 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
 
-    <!-- Performance optimizations -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    
     <!-- Favicon - Multiple formats with cache busting -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=6" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=6" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=6" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=6" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=6" />
-    <link rel="apple-touch-icon" href="/thumbnail_optimized.png?v=6" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=7" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=7" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=7" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=7" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=7" />
+    <link rel="apple-touch-icon" href="/thumbnail_optimized.png?v=7" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/thumbnail_optimized.png?v=7" />
 
     <!-- Force favicon refresh -->
-    <link rel="shortcut icon" href="/favicon.ico?v=6" />
+    <link rel="shortcut icon" href="/favicon.ico?v=7" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Velora Tek - Enterprise Technology Solutions" />
@@ -46,19 +57,88 @@
     <meta name="twitter:description" content="Leading provider of enterprise IT solutions including cybersecurity, cloud computing, SharePoint services, and network management." />
     <meta name="twitter:image" content="/thumbnail_optimized.png" />
 
-    <!-- Additional security and performance meta tags -->
+    <!-- Additional mobile optimizations -->
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    <meta name="theme-color" content="#1976d2" />
-    <meta name="msapplication-TileColor" content="#1976d2" />
     
-    <!-- Cache control -->
+    <!-- Cache control for mobile -->
     <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    
+    <!-- Mobile-specific CSS variables -->
+    <style>
+      :root {
+        --mobile-optimized: 0;
+        --reduce-motion: 0;
+        --low-end-device: 0;
+      }
+      
+      .mobile-device {
+        --mobile-optimized: 1;
+      }
+      
+      .reduce-motion {
+        --reduce-motion: 1;
+      }
+      
+      .low-end-device {
+        --low-end-device: 1;
+      }
+      
+      /* Mobile-specific optimizations */
+      @media (max-width: 768px) {
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior: contain;
+        }
+        
+        input, textarea, select {
+          font-size: 16px !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Mobile performance script -->
+    <script>
+      // Mobile performance optimizations
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+      
+      // Prevent zoom on input focus (iOS)
+      document.addEventListener('touchstart', function() {}, true);
+      
+      // Optimize for mobile performance
+      if (window.innerWidth <= 768) {
+        document.documentElement.classList.add('mobile-device');
+        
+        // Disable complex animations on low-end devices
+        if (navigator.hardwareConcurrency <= 2) {
+          document.documentElement.classList.add('low-end-device');
+        }
+        
+        // Check for reduced motion preference
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.documentElement.classList.add('reduce-motion');
+        }
+      }
+    </script>
 
     <!-- Hidden Netlify form for build-time detection -->
     <form name="contact-hidden" netlify netlify-honeypot="bot-field" hidden>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { usePerformance } from "./hooks/usePerformance";
+import { useMobilePerformance } from "./hooks/useMobilePerformance";
 import { SecurityProvider } from "./components/SecurityProvider";
 import ErrorBoundary from "./components/ErrorBoundary";
 import PageLoader from "./components/PageLoader";
@@ -39,6 +40,31 @@ function ScrollToTop() {
 
 function App() {
   usePerformance();
+  const mobilePerformance = useMobilePerformance();
+
+  useEffect(() => {
+    // Apply mobile optimizations
+    const cleanup = mobilePerformance.optimizeForMobile();
+    
+    // Add mobile-specific classes
+    if (mobilePerformance.isMobile) {
+      document.documentElement.classList.add('mobile-device');
+    }
+    
+    if (mobilePerformance.shouldReduceAnimations()) {
+      document.documentElement.classList.add('reduce-motion');
+    }
+
+    // Optimize for low-end devices
+    if (mobilePerformance.isLowEndDevice) {
+      document.documentElement.classList.add('low-end-device');
+    }
+
+    return () => {
+      cleanup();
+      document.documentElement.classList.remove('mobile-device', 'reduce-motion', 'low-end-device');
+    };
+  }, [mobilePerformance]);
 
   return (
     <ErrorBoundary>
