@@ -1,0 +1,15 @@
+# Netlify redirects for SPA routing
+# This ensures all routes are handled by the React app
+
+# Redirect all non-file requests to index.html
+/*    /index.html   200
+
+# Optional: Add specific redirects for better SEO
+/services    /services    200
+/sharepoint  /sharepoint  200
+/about       /about       200
+/contact     /contact     200
+/admin       /admin       200
+
+# Handle 404s
+/*    /404.html    404
