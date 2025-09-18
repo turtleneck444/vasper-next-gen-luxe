@@ -204,7 +204,7 @@ export const Footer = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white">Enterprise Support</p>
-                    <p className="text-xs text-gray-400">OscarM@veloratek.com</p>
+                    <p className="text-xs text-gray-400">support@veloratek.com</p>
                     <p className="text-xs text-blue-400">&lt; 4 Hour Response</p>
                   </div>
                 </div>

@@ -74,7 +74,7 @@ export const Contact = () => {
       icon: Mail,
       title: "Enterprise Inquiries",
       subtitle: "Business Development",
-      contact: "OscarM@veloratek.com",
+      contact: "support@veloratek.com",
       description: "Strategic partnerships and enterprise solutions",
       color: "from-blue-600 to-cyan-600",
       bgColor: "bg-blue-50",
@@ -84,7 +84,7 @@ export const Contact = () => {
       icon: MessageSquare,
       title: "General Support",
       subtitle: "Technical Assistance",
-      contact: "OscarM@veloratek.com",
+      contact: "support@veloratek.com",
       description: "Technical questions and general inquiries",
       color: "from-green-600 to-emerald-600",
       bgColor: "bg-green-50",
@@ -413,7 +413,7 @@ export const Contact = () => {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">North America</h3>
                 <p className="text-gray-600 mb-3">United States Operations</p>
                 <p className="text-sm text-gray-500">Primary: (949) 396-0640</p>
-                <p className="text-sm text-gray-500">Email: OscarM@veloratek.com</p>
+                <p className="text-sm text-gray-500">Email: support@veloratek.com</p>
               </div>
               <div className="text-center p-6 bg-white rounded-xl shadow-lg">
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -160,7 +160,7 @@ const luxuryClients = [
     id: 1,
     name: "Rothschild & Associates",
     email: "contact@rothschild-associates.com",
-    phone: "+1 (212) 555-0123",
+    phone: "(949) 396-0640",
     status: "Active",
     tier: "Platinum",
     revenue: "$2,847,500",
@@ -180,7 +180,7 @@ const luxuryClients = [
       name: "Victoria Rothschild",
       title: "Chief Security Officer",
       email: "v.rothschild@rothschild-associates.com",
-      phone: "+1 (212) 555-0124"
+      phone: "(949) 396-0640"
     },
     services: ["Penetration Testing", "Security Audits", "Compliance", "Incident Response"],
     notes: "Extremely security-conscious client. Requires 24/7 monitoring and immediate threat response.",

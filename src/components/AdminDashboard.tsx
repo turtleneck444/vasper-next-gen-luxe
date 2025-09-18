@@ -422,7 +422,7 @@ function Topbar({ toggleSidebar }: { toggleSidebar: () => void }) {
             </div>
             <div className="hidden md:block text-left">
               <p className="text-sm font-semibold text-gray-900">Security Admin</p>
-              <p className="text-xs text-gray-500">OscarM@veloratek.com</p>
+              <p className="text-xs text-gray-500">support@veloratek.com</p>
             </div>
             <ChevronDown className="w-4 h-4 text-gray-400" />
           </button>
@@ -437,7 +437,7 @@ function Topbar({ toggleSidebar }: { toggleSidebar: () => void }) {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Security Admin</p>
-                    <p className="text-sm text-gray-500">OscarM@veloratek.com</p>
+                    <p className="text-sm text-gray-500">support@veloratek.com</p>
                   </div>
                 </div>
               </div>

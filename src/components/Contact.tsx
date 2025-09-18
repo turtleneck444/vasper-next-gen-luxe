@@ -199,7 +199,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Enterprise Sales</p>
-                    <p className="text-corporate-gray">OscarM@veloratek.com</p>
+                    <p className="text-corporate-gray">support@veloratek.com</p>
                     <p className="text-sm text-corporate-gray">Response within 4 hours</p>
                   </div>
                 </div>
