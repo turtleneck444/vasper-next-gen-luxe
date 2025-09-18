@@ -69,24 +69,48 @@ export const Contact = () => {
 
     setIsSubmitting(true);
     
-    // Let Netlify handle the form submission
-    setTimeout(() => {
+    // Create FormData for Netlify submission
+    const formDataToSubmit = new FormData();
+    formDataToSubmit.append('form-name', 'contact-component');
+    formDataToSubmit.append('name', formData.name);
+    formDataToSubmit.append('email', formData.email);
+    formDataToSubmit.append('company', formData.company);
+    formDataToSubmit.append('phone', formData.phone);
+    formDataToSubmit.append('subject', formData.subject);
+    formDataToSubmit.append('message', formData.message);
+
+    try {
+      // Submit to Netlify
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataToSubmit as any).toString()
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Reset form after successful submission
+        setTimeout(() => {
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+          setIsSubmitted(false);
+        }, 3000);
+      } else {
+        console.error('Form submission failed');
+        alert('There was an error submitting the form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting the form. Please try again.');
+    } finally {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-      
-      // Reset form after successful submission
-      setTimeout(() => {
-        setFormData({
-          name: "",
-          email: "",
-          company: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-        setIsSubmitted(false);
-      }, 3000);
-    }, 1000);
+    }
   };
 
   return (
