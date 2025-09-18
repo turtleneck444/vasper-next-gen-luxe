@@ -8,8 +8,8 @@
     <meta name="author" content="Velora Tek" />
     <meta name="keywords" content="enterprise IT, cybersecurity, cloud computing, SharePoint, network management, managed services, digital transformation" />
 
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+    <!-- Security Headers - Relaxed for better compatibility -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
@@ -22,15 +22,15 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     
     <!-- Favicon - Multiple formats with cache busting -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=5" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=5" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=5" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=5" />
-    <link rel="apple-touch-icon" href="/thumbnail_optimized.png?v=5" />
-    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=6" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=6" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=6" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=6" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=6" />
+    <link rel="apple-touch-icon" href="/thumbnail_optimized.png?v=6" />
+
     <!-- Force favicon refresh -->
-    <link rel="shortcut icon" href="/favicon.ico?v=5" />
+    <link rel="shortcut icon" href="/favicon.ico?v=6" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Velora Tek - Enterprise Technology Solutions" />
@@ -45,15 +45,32 @@
     <meta name="twitter:title" content="Velora Tek - Enterprise Technology Solutions" />
     <meta name="twitter:description" content="Leading provider of enterprise IT solutions including cybersecurity, cloud computing, SharePoint services, and network management." />
     <meta name="twitter:image" content="/thumbnail_optimized.png" />
+
+    <!-- Additional security and performance meta tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="msapplication-TileColor" content="#1976d2" />
     
-    <!-- Cache busting -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Hidden Netlify form for build-time detection -->
+    <form name="contact-hidden" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="tel" name="phone" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <div hidden>
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </div>
+    </form>
   </body>
 </html>

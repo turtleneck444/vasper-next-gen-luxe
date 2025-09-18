@@ -102,7 +102,7 @@ export const SharePoint = () => {
                   Microsoft SharePoint Experts
                 </div>
                 
-                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Unlock Your Business Potential with 
                   <span className="text-corporate-gradient block">SharePoint Solutions</span>
                 </h1>
