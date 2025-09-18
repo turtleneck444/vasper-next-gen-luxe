@@ -151,14 +151,14 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean; toggleSidebar: ()
         {/* Header */}
         <div className="h-20 px-6 border-b border-gray-200/60 flex items-center justify-between bg-gradient-to-r from-gray-50 to-white">
           <div className="flex items-center space-x-3">
-            {/* VasperNet Logo */}
+            {/* Velora Tek Logo */}
             <div className="relative">
-              <img src="/logo.png" alt="VasperNet Logo" className="w-16 h-16 rounded-xl shadow-lg" />
+              <img src="/logo.png" alt="Velora Tek Logo" className="w-16 h-16 rounded-xl shadow-lg" />
               <div className="absolute -inset-1 rounded-lg bg-gradient-to-tr from-blue-500/20 to-cyan-500/20 blur-sm -z-10"></div>
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900 tracking-tight">
-                VASPERNET
+                VELORA TEK
               </h1>
               <p className="text-xs text-gray-500 font-semibold tracking-wider">CYBERSECURITY</p>
             </div>
@@ -422,7 +422,7 @@ function Topbar({ toggleSidebar }: { toggleSidebar: () => void }) {
             </div>
             <div className="hidden md:block text-left">
               <p className="text-sm font-semibold text-gray-900">Security Admin</p>
-              <p className="text-xs text-gray-500">soc@vaspernet.com</p>
+              <p className="text-xs text-gray-500">OscarM@veloratek.com</p>
             </div>
             <ChevronDown className="w-4 h-4 text-gray-400" />
           </button>
@@ -437,7 +437,7 @@ function Topbar({ toggleSidebar }: { toggleSidebar: () => void }) {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Security Admin</p>
-                    <p className="text-sm text-gray-500">soc@vaspernet.com</p>
+                    <p className="text-sm text-gray-500">OscarM@veloratek.com</p>
                   </div>
                 </div>
               </div>

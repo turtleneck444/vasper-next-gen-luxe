@@ -385,9 +385,9 @@ export const About = () => {
               <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Leadership Team Coming Soon</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Leadership Excellence</h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Our executive leadership team will be featured here. Each member brings decades of enterprise technology experience 
+                Our executive leadership team combines decades of enterprise technology experience 
                 and a proven track record of delivering exceptional results for Fortune 500 companies.
               </p>
             </div>

@@ -132,7 +132,7 @@ export const Contact = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="transition-all duration-200 focus:ring-2 focus:ring-primary"
-                    placeholder="(555) 123-4567"
+                    placeholder="(949) 396-0640"
                   />
                 </div>
               </div>
@@ -199,7 +199,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Enterprise Sales</p>
-                    <p className="text-corporate-gray">OscarM@vaspernet.com</p>
+                    <p className="text-corporate-gray">OscarM@veloratek.com</p>
                     <p className="text-sm text-corporate-gray">Response within 4 hours</p>
                   </div>
                 </div>

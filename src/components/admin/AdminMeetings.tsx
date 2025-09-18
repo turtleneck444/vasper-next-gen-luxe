@@ -136,9 +136,9 @@ const securityMeetings = [
     status: "Scheduled",
     priority: "High",
     participants: [
-      { name: "John Smith", role: "Security Analyst", email: "john@vaspernet.com", avatar: "JS", status: "confirmed" },
+      { name: "John Smith", role: "Security Analyst", email: "john@veloratek.com", avatar: "JS", status: "confirmed" },
       { name: "Sarah Johnson", role: "Client Security Officer", email: "sarah@acme.com", avatar: "SJ", status: "confirmed" },
-      { name: "Mike Chen", role: "Network Engineer", email: "mike@vaspernet.com", avatar: "MC", status: "pending" },
+      { name: "Mike Chen", role: "Network Engineer", email: "mike@veloratek.com", avatar: "MC", status: "pending" },
       { name: "Lisa Wang", role: "IT Director", email: "lisa@acme.com", avatar: "LW", status: "confirmed" }
     ],
     agenda: [
@@ -148,7 +148,7 @@ const securityMeetings = [
       "Incident response updates",
       "Compliance status check"
     ],
-    meetingLink: "https://meet.vaspernet.com/acme-q2-2024",
+    meetingLink: "https://meet.veloratek.com/acme-q2-2024",
     passcode: "Acme2024!",
     recording: true,
     transcription: true,
@@ -167,9 +167,9 @@ const securityMeetings = [
     status: "Completed",
     priority: "Critical",
     participants: [
-      { name: "Alex Rodriguez", role: "Incident Response Lead", email: "alex@vaspernet.com", avatar: "AR", status: "attended" },
+      { name: "Alex Rodriguez", role: "Incident Response Lead", email: "alex@veloratek.com", avatar: "AR", status: "attended" },
       { name: "Emma Thompson", role: "Security Manager", email: "emma@globex.com", avatar: "ET", status: "attended" },
-      { name: "David Kim", role: "SOC Analyst", email: "david@vaspernet.com", avatar: "DK", status: "attended" },
+      { name: "David Kim", role: "SOC Analyst", email: "david@veloratek.com", avatar: "DK", status: "attended" },
       { name: "Rachel Green", role: "IT Manager", email: "rachel@globex.com", avatar: "RG", status: "attended" }
     ],
     agenda: [
@@ -179,7 +179,7 @@ const securityMeetings = [
       "Recovery procedures",
       "Lessons learned discussion"
     ],
-    meetingLink: "https://meet.vaspernet.com/globex-ir-exercise",
+    meetingLink: "https://meet.veloratek.com/globex-ir-exercise",
     passcode: "GlobexIR2024",
     recording: true,
     transcription: true,
@@ -205,8 +205,8 @@ const securityMeetings = [
     participants: [
       { name: "Bruce Wayne", role: "CEO", email: "bruce@wayneent.com", avatar: "BW", status: "confirmed" },
       { name: "Alfred Pennyworth", role: "CTO", email: "alfred@wayneent.com", avatar: "AP", status: "confirmed" },
-      { name: "Tom Anderson", role: "Compliance Officer", email: "tom@vaspernet.com", avatar: "TA", status: "confirmed" },
-      { name: "Maria Garcia", role: "Audit Specialist", email: "maria@vaspernet.com", avatar: "MG", status: "pending" }
+      { name: "Tom Anderson", role: "Compliance Officer", email: "tom@veloratek.com", avatar: "TA", status: "confirmed" },
+      { name: "Maria Garcia", role: "Audit Specialist", email: "maria@veloratek.com", avatar: "MG", status: "pending" }
     ],
     agenda: [
       "SOC 2 Type II audit preparation",
@@ -215,7 +215,7 @@ const securityMeetings = [
       "Evidence collection planning",
       "Timeline and milestones"
     ],
-    meetingLink: "https://meet.vaspernet.com/wayne-compliance-2024",
+    meetingLink: "https://meet.veloratek.com/wayne-compliance-2024",
     passcode: "WayneSOC2024",
     recording: false,
     transcription: true,
@@ -237,7 +237,7 @@ const securityMeetings = [
       { name: "Tony Stark", role: "CEO", email: "tony@stark.com", avatar: "TS", status: "confirmed" },
       { name: "Pepper Potts", role: "COO", email: "pepper@stark.com", avatar: "PP", status: "confirmed" },
       { name: "Happy Hogan", role: "Security Director", email: "happy@stark.com", avatar: "HH", status: "confirmed" },
-      { name: "James Wilson", role: "Account Manager", email: "james@vaspernet.com", avatar: "JW", status: "confirmed" }
+      { name: "James Wilson", role: "Account Manager", email: "james@veloratek.com", avatar: "JW", status: "confirmed" }
     ],
     agenda: [
       "Service overview presentation",
@@ -246,7 +246,7 @@ const securityMeetings = [
       "Team introductions",
       "Next steps and expectations"
     ],
-    meetingLink: "https://meet.vaspernet.com/stark-onboarding",
+    meetingLink: "https://meet.veloratek.com/stark-onboarding",
     passcode: "StarkWelcome2024",
     recording: true,
     transcription: true,
@@ -265,8 +265,8 @@ const securityMeetings = [
     status: "Scheduled",
     priority: "High",
     participants: [
-      { name: "Rachel Green", role: "Threat Intel Analyst", email: "rachel@vaspernet.com", avatar: "RG", status: "confirmed" },
-      { name: "Various Clients", role: "Security Teams", email: "clients@vaspernet.com", avatar: "VC", status: "confirmed" }
+      { name: "Rachel Green", role: "Threat Intel Analyst", email: "rachel@veloratek.com", avatar: "RG", status: "confirmed" },
+      { name: "Various Clients", role: "Security Teams", email: "clients@veloratek.com", avatar: "VC", status: "confirmed" }
     ],
     agenda: [
       "Latest threat landscape overview",
@@ -275,7 +275,7 @@ const securityMeetings = [
       "Defense recommendations",
       "Q&A session"
     ],
-    meetingLink: "https://meet.vaspernet.com/threat-intel-june2024",
+    meetingLink: "https://meet.veloratek.com/threat-intel-june2024",
     passcode: "ThreatIntel2024",
     recording: true,
     transcription: true,

@@ -856,7 +856,7 @@ export default function AdminCustomers() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">Phone</label>
-                  <input type="tel" className="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-500 focus:border-slate-500" placeholder="+1 (555) 123-4567" />
+                  <input type="tel" className="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-500 focus:border-slate-500" placeholder="(949) 396-0640" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">Industry</label>

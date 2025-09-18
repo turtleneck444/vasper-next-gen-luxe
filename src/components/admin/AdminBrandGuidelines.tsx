@@ -114,14 +114,14 @@ import {
 
 // Advanced Cybersecurity Brand Options - Completely Unique Identities
 const luxuryBrands = {
-  vaspernet: {
-    name: "VasperNet",
+  veloratek: {
+    name: "Velora Tek",
     tagline: "Next-Generation Cybersecurity",
     description: "Elite cybersecurity solutions for the world's most discerning organizations",
     industry: "Cybersecurity & Technology",
     personality: "Sophisticated, Innovative, Trustworthy",
     founded: 2024,
-    website: "vaspernet.com",
+    website: "veloratek.com",
     typography: {
       primary: "Inter",
       secondary: "Inter",
@@ -1434,7 +1434,7 @@ const componentExamples = {
 
 export default function AdminBrandGuidelines() {
   const [activeSection, setActiveSection] = useState("overview");
-  const [selectedBrand, setSelectedBrand] = useState("vaspernet");
+  const [selectedBrand, setSelectedBrand] = useState("veloratek");
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
 
   const copyToClipboard = (text: string, label: string) => {

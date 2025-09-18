@@ -40,10 +40,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       <div className="max-w-7xl mx-auto py-8 px-2 md:px-4 lg:px-6">
         <div className="text-center">
           <h2 className="text-lg md:text-4xl mb-4 font-extrabold max-w-4xl mx-auto">
-            <span className="text-black dark:text-white">The VasperNet Journey</span><span className="text-[#1976d2]">: Milestones of Excellence</span>
+            <span className="text-black dark:text-white">The Velora Tek Journey</span><span className="text-[#1976d2]">: Milestones of Excellence</span>
           </h2>
           <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-xl mx-auto">
-            A legacy of innovation, trust, and global impact. Discover how VasperNet has shaped the future of enterprise technology and set new standards for the industry.
+            A legacy of innovation, trust, and global impact. Discover how Velora Tek has shaped the future of enterprise technology and set new standards for the industry.
           </p>
         </div>
       </div>

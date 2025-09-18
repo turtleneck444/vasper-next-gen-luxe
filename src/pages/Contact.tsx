@@ -64,7 +64,7 @@ export const Contact = () => {
       icon: Phone,
       title: "Emergency Support",
       subtitle: "24/7 Critical Issues",
-      contact: "+1 (555) 123-4567",
+      contact: "(949) 396-0640",
       description: "Immediate response for urgent security incidents",
       color: "from-red-600 to-orange-600",
       bgColor: "bg-red-50",
@@ -74,7 +74,7 @@ export const Contact = () => {
       icon: Mail,
       title: "Enterprise Inquiries",
       subtitle: "Business Development",
-      contact: "OscarM@vaspernet.com",
+      contact: "OscarM@veloratek.com",
       description: "Strategic partnerships and enterprise solutions",
       color: "from-blue-600 to-cyan-600",
       bgColor: "bg-blue-50",
@@ -84,7 +84,7 @@ export const Contact = () => {
       icon: MessageSquare,
       title: "General Support",
       subtitle: "Technical Assistance",
-      contact: "support@veloratek.com",
+      contact: "OscarM@veloratek.com",
       description: "Technical questions and general inquiries",
       color: "from-green-600 to-emerald-600",
       bgColor: "bg-green-50",
@@ -298,7 +298,7 @@ export const Contact = () => {
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="w-full"
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="(949) 396-0640"
                         />
                       </div>
                     </div>
@@ -405,17 +405,35 @@ export const Contact = () => {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Globe className="w-12 h-12 text-white" />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">North America</h3>
+                <p className="text-gray-600 mb-3">United States Operations</p>
+                <p className="text-sm text-gray-500">Primary: (949) 396-0640</p>
+                <p className="text-sm text-gray-500">Email: OscarM@veloratek.com</p>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Offices Coming Soon</h3>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Our global office locations will be featured here. Velora Tek serves enterprise clients worldwide 
-                with local expertise and global capabilities, ensuring 24/7 support across all time zones.
-              </p>
-            </div>
-          </div>
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">24/7 Support</h3>
+                <p className="text-gray-600 mb-3">Global Coverage</p>
+                <p className="text-sm text-gray-500">Emergency: (949) 396-0640</p>
+                <p className="text-sm text-gray-500">Available worldwide</p>
+              </div>
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Enterprise Ready</h3>
+                <p className="text-gray-600 mb-3">Fortune 500 Trusted</p>
+                <p className="text-sm text-gray-500">SOC 2 Compliant</p>
+                <p className="text-sm text-gray-500">ISO 27001 Certified</p>
+              </div>
+            </div>          </div>
         </div>
       </section>
 

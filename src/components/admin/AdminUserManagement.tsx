@@ -1,9 +1,9 @@
 import React from "react";
 
 const users = [
-  { id: 1, name: "Admin", email: "admin@vaspernet.com", role: "Administrator" },
-  { id: 2, name: "Jane Doe", email: "jane@vaspernet.com", role: "Manager" },
-  { id: 3, name: "John Smith", email: "john@vaspernet.com", role: "Support" },
+  { id: 1, name: "Admin", email: "admin@veloratek.com", role: "Administrator" },
+  { id: 2, name: "Jane Doe", email: "jane@veloratek.com", role: "Manager" },
+  { id: 3, name: "John Smith", email: "john@veloratek.com", role: "Support" },
 ];
 
 export default function UserManagementPage() {

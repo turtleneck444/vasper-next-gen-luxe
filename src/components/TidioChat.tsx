@@ -18,11 +18,11 @@ export const TidioChat: React.FC = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    // Configure Tidio for VasperNet
+    // Configure Tidio for Velora Tek
     script.onload = () => {
       if (window.tidioChatApi) {
-        // Customize the chat for VasperNet IT services
-        console.log('Tidio chat loaded for VasperNet');
+        // Customize the chat for Velora Tek IT services
+        console.log('Tidio chat loaded for Velora Tek');
       }
     };
 

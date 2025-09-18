@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,15 @@ import {
 } from "lucide-react";
 
 export const SharePoint = () => {
+  const navigate = useNavigate();
+
+  const handleScheduleConsultation = () => {
+    navigate("/contact");
+  };
+
+  const handleCallNow = () => {
+    window.location.href = "tel:(949)396-0640";
+  };
   const services = [
     {
       icon: <Settings className="w-8 h-8" />,
@@ -96,18 +106,11 @@ export const SharePoint = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     size="lg" 
+                    onClick={handleScheduleConsultation}
                     className="gradient-primary-subtle text-white font-semibold px-8 py-4 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
                   >
                     <Phone className="mr-2 w-5 h-5" />
                     Schedule Consultation
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4"
-                  >
-                    View Case Studies
-                    <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
               </div>
@@ -252,6 +255,7 @@ export const SharePoint = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
+                onClick={handleScheduleConsultation}
                 className="gradient-primary-subtle text-white font-semibold px-10 py-4 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
               >
                 <Phone className="mr-2 w-5 h-5" />
@@ -260,9 +264,10 @@ export const SharePoint = () => {
               <Button 
                 size="lg" 
                 variant="outline"
+                onClick={handleCallNow}
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4"
               >
-                Call: (555) 123-4567
+                Call: (949) 396-0640
               </Button>
             </div>
           </div>

@@ -130,7 +130,7 @@ export const AdminDashboardCustomization = () => {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            VasperNet <span className="text-blue-600">Dashboard</span>
+            Velora Tek <span className="text-blue-600">Dashboard</span>
           </h1>
           <p className="text-xl text-gray-600">
             Customized enterprise IT management and strategic oversight
@@ -244,7 +244,7 @@ export const AdminDashboardCustomization = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
                     <input 
                       type="text" 
-                      value="VasperNet Technology" 
+                      value="Velora Tek" 
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
