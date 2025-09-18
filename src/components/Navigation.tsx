@@ -57,9 +57,11 @@ export const Navigation = () => {
               </div>
             </div>
             <LanguageSelector />
-            <Button className="gradient-primary-subtle text-white hover:shadow-corporate transition-all duration-200">
-              Get Quote
-            </Button>
+            <Link to="/contact">
+              <Button className="gradient-primary-subtle text-white hover:shadow-corporate transition-all duration-200">
+                Schedule a Consultation
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,9 +97,11 @@ export const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4 border-t border-corporate-border">
-                <Button className="w-full gradient-primary-subtle text-white font-semibold">
-                  Get Quote
-                </Button>
+                <Link to="/contact">
+                  <Button className="w-full gradient-primary-subtle text-white font-semibold">
+                    Schedule a Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

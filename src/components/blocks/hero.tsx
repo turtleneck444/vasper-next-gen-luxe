@@ -48,54 +48,45 @@ const EarthDayNightMaterial = ({ dayMap, nightMap, rotationY }) => {
           gl_FragColor = vec4(mix(nightColor, dayColor, dayAmount), 1.0);
         }
       `}
-      attach="material"
     />
   );
 };
  
-function Globe() {
-  const earthRef = useRef<THREE.Mesh | null>(null);
-  const dayMap = useLoader(THREE.TextureLoader, '/8k_earth_daymap.jpg');
-  const nightMap = useLoader(THREE.TextureLoader, '/8k_earth_nightmap.jpg');
+function Globe3D() {
+  const earthRef = useRef<THREE.Mesh>(null);
   const rotationY = useRef(0);
-  useFrame(() => {
+  const pulse = useRef(0);
+  const [dayMap, nightMap] = useLoader(THREE.TextureLoader, [
+    '/8k_earth_daymap.jpg',
+    '/8k_earth_nightmap.jpg'
+  ]);
+ 
+  useFrame((state) => {
     if (earthRef.current) {
-      earthRef.current.rotation.y += 0.002;
-      rotationY.current = earthRef.current.rotation.y;
+      rotationY.current += 0.002;
+      pulse.current = Math.sin(state.clock.elapsedTime * 2) * 0.5 + 0.5;
     }
   });
-  // High-quality, animated neural pathways
+ 
+  // Generate neural pathway curves
   const neuralPaths = useMemo(() => {
-    // Generate smooth bezier curves between random points on the globe
-    const points: [number, number][] = [
-      [40, -74], [35, 139], [51, 0], [37, -122], [-33, 151], [1, 103], [48, 2], [-23, -43], [28, 77], [34, -118]
-    ];
-    const toVec3 = (lat, lng, r = 1.01) => {
-      const phi = (90 - lat) * (Math.PI / 180);
-      const theta = (lng + 180) * (Math.PI / 180);
-      return [
-        -r * Math.sin(phi) * Math.cos(theta),
-        r * Math.cos(phi),
-        r * Math.sin(phi) * Math.sin(theta),
-      ];
-    };
-    let paths = [];
-    for (let i = 0; i < points.length; i++) {
-      for (let j = i + 1; j < points.length; j++) {
-        const start = toVec3(...points[i]);
-        const end = toVec3(...points[j]);
-        const mid = [
-          (start[0] + end[0]) / 2,
-          (start[1] + end[1]) / 2 + 0.5,
-          (start[2] + end[2]) / 2,
-        ];
-        paths.push([start, mid, end]);
+    const paths = [];
+    for (let i = 0; i < 8; i++) {
+      const points = [];
+      const radius = 2.5 + Math.random() * 0.5;
+      const segments = 20;
+      for (let j = 0; j <= segments; j++) {
+        const angle = (j / segments) * Math.PI * 2;
+        const x = Math.cos(angle) * radius + (Math.random() - 0.5) * 0.3;
+        const y = Math.sin(angle) * radius + (Math.random() - 0.5) * 0.3;
+        const z = (Math.random() - 0.5) * 0.5;
+        points.push(new THREE.Vector3(x, y, z));
       }
+      paths.push(points);
     }
     return paths;
   }, []);
-  // Animate pulse
-  const pulse = Math.abs(Math.sin(Date.now() * 0.001));
+ 
   return (
     <>
       <ambientLight intensity={2.2} />
@@ -128,7 +119,7 @@ function Globe() {
   );
 }
  
-export default function Globe3D() {
+export default function Hero() {
   return (
     <section
       className="relative min-h-[60vh] w-full overflow-hidden pb-10 pt-24 font-light text-white antialiased md:pb-16 md:pt-16"
@@ -161,8 +152,8 @@ export default function Globe3D() {
             >
               Schedule Consultation
             </Link>
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="pointer-events-auto flex w-full items-center justify-center gap-2 text-[#1976d2] transition-colors hover:text-[#1565c0] sm:w-auto text-base md:text-lg"
             >
               <span>View Services</span>
@@ -179,7 +170,7 @@ export default function Globe3D() {
               >
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/80">
             <div className="flex items-center gap-2">
