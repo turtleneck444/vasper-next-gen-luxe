@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    // Security headers for dev server
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'X-XSS-Protection': '1; mode=block',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+    },
   },
   plugins: [
     react(),
@@ -26,6 +33,8 @@ export default defineConfig(({ mode }) => ({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        // Remove console statements in production
+        pure_funcs: ['console.log', 'console.warn', 'console.error'],
       },
     },
     rollupOptions: {
@@ -33,12 +42,19 @@ export default defineConfig(({ mode }) => ({
         manualChunks: {
           vendor: ['react', 'react-dom'],
           ui: ['lucide-react', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+          charts: ['recharts'],
         },
       },
     },
     chunkSizeWarningLimit: 1000,
+    // Security: Don't expose source maps in production
+    sourcemap: mode === 'development',
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'lucide-react'],
+  },
+  // Security: Define environment variables
+  define: {
+    __DEV__: mode === 'development',
   },
 }));

@@ -22,7 +22,6 @@ export const TidioChat: React.FC = () => {
     script.onload = () => {
       if (window.tidioChatApi) {
         // Customize the chat for Velora Tek IT services
-        console.log('Tidio chat loaded for Velora Tek');
       }
     };
 
