@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, MessageSquare, Send, CheckCircle, ArrowRight, Download } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageSquare, Send, CheckCircle, ArrowRight } from "lucide-react";
 import { validateEmail, validatePhone, sanitizeInput } from "../utils/security";
 
 export const Contact = () => {
@@ -121,37 +121,6 @@ export const Contact = () => {
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handleDownloadBrochure = () => {
-    // Create a simple brochure download
-    const brochureContent = `
-Velora Tek - Enterprise Technology Solutions
-
-Leading provider of enterprise IT solutions including:
-• Cybersecurity Services
-• Cloud Computing Solutions
-• SharePoint Services
-• Network Management
-• Managed IT Services
-
-Contact Information:
-Phone: (949) 396-0640
-Email: support@veloratek.com
-Website: veloratek.com
-
-Trusted by Fortune 500 companies worldwide.
-    `;
-    
-    const blob = new Blob([brochureContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Velora-Tek-Brochure.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -413,7 +382,7 @@ Trusted by Fortune 500 companies worldwide.
               Join hundreds of Fortune 500 companies that trust Velora Tek for their critical technology needs
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 onClick={handleScheduleConsultation}
@@ -421,15 +390,6 @@ Trusted by Fortune 500 companies worldwide.
               >
                 Schedule Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                onClick={handleDownloadBrochure}
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg rounded-xl font-semibold transition-all duration-300"
-              >
-                Download Brochure
-                <Download className="ml-2 w-5 h-5" />
               </Button>
             </div>
           </div>
