@@ -44,7 +44,7 @@ export const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "About VasperNet", href: "#about" },
+    { name: "About Velora Tek", href: "#about" },
     { name: "Our Services", href: "#services" },
     { name: "Case Studies", href: "#portfolio" },
     { name: "Contact Us", href: "#contact" },
@@ -88,7 +88,7 @@ export const Footer = () => {
                   <Shield className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">VasperNet</h3>
+                  <h3 className="text-xl font-bold text-white">Velora Tek</h3>
                   <p className="text-sm text-gray-400">Technology Solutions</p>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export const Footer = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white">Emergency Line</p>
-                    <p className="text-xs text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-xs text-gray-400">(949) 396-0640</p>
                     <p className="text-xs text-red-400">24/7 Available</p>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export const Footer = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white">Enterprise Support</p>
-                    <p className="text-xs text-gray-400">enterprise@vaspernet.com</p>
+                    <p className="text-xs text-gray-400">OscarM@vaspernet.com</p>
                     <p className="text-xs text-blue-400">&lt; 4 Hour Response</p>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export const Footer = () => {
           <div className="border-t border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
-                <span>&copy; {currentYear} VasperNet Technology Solutions. All rights reserved.</span>
+                <span>&copy; {currentYear} Velora Tek Technology Solutions. All rights reserved.</span>
                 <div className="flex items-center space-x-4">
                   <a href="#privacy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
                   <a href="#terms" className="hover:text-white transition-colors duration-200">Terms of Service</a>

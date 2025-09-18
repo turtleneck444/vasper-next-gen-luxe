@@ -73,7 +73,7 @@ export const About = () => {
     {
       year: "2009",
       title: "Company Founded",
-      description: "VasperNet established with a vision to deliver enterprise-grade IT solutions",
+      description: "Velora Tek established with a vision to deliver enterprise-grade IT solutions",
       achievement: "First Fortune 500 client secured"
     },
     {
@@ -134,19 +134,19 @@ export const About = () => {
 
   const testimonials = [
     {
-      quote: "VasperNet transformed our entire IT infrastructure. Their expertise in cybersecurity and cloud solutions has given us the competitive edge we needed.",
+      quote: "Velora Tek transformed our entire IT infrastructure. Their expertise in cybersecurity and cloud solutions has given us the competitive edge we needed.",
       author: "David Thompson",
       role: "CTO, Global Financial Services",
       company: "Fortune 100 Company"
     },
     {
-      quote: "The level of professionalism and technical expertise VasperNet brings to every engagement is unmatched. They're true partners in our success.",
+      quote: "The level of professionalism and technical expertise Velora Tek brings to every engagement is unmatched. They're true partners in our success.",
       author: "Lisa Wang",
       role: "VP of Technology",
       company: "Healthcare Network"
     },
     {
-      quote: "Working with VasperNet has been a game-changer for our organization. Their 24/7 support and proactive approach give us complete peace of mind.",
+      quote: "Working with Velora Tek has been a game-changer for our organization. Their 24/7 support and proactive approach give us complete peace of mind.",
       author: "Robert Martinez",
       role: "IT Director",
       company: "Manufacturing Giant"
@@ -179,7 +179,7 @@ export const About = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-6 bg-blue-100 text-blue-800 border-blue-200 px-4 py-2">
-                About VasperNet
+                About Velora Tek
               </Badge>
               
               <TypewriterEffect
@@ -193,7 +193,7 @@ export const About = () => {
               />
               
               <TextGenerateEffect
-                words="For over 15 years, VasperNet has been the trusted technology partner for Fortune 500 companies worldwide, delivering enterprise-grade solutions that drive innovation, security, and growth."
+                words="For over 15 years, Velora Tek has been the trusted technology partner for Fortune 500 companies worldwide, delivering enterprise-grade solutions that drive innovation, security, and growth."
                 className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12"
                 duration={0.7}
               />
@@ -459,7 +459,7 @@ export const About = () => {
                 Client <span className="text-blue-600">Testimonials</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                What Fortune 500 leaders say about working with VasperNet
+                What Fortune 500 leaders say about working with Velora Tek
               </p>
             </div>
 
@@ -585,7 +585,7 @@ export const About = () => {
         <div className="w-full px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Partner with VasperNet?
+              Ready to Partner with Velora Tek?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Join hundreds of Fortune 500 companies that trust us with their most critical technology initiatives

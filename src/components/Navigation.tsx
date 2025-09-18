@@ -11,6 +11,7 @@ export const Navigation = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
+    { label: "SharePoint", href: "/sharepoint" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
@@ -21,11 +22,9 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="/logo.png" 
-              alt="VasperNet Technology" 
-              className="h-16 w-auto"
-            />
+            <div className="text-2xl font-bold text-primary">
+              Velora Tek
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +53,7 @@ export const Navigation = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-trust-gold" />
-                <span>(555) 123-4567</span>
+                <span>(949) 396-0640</span>
               </div>
             </div>
             <LanguageSelector />

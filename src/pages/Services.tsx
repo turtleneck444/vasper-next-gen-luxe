@@ -510,7 +510,7 @@ export const Services = () => {
               Ready to Transform Your Enterprise?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Join hundreds of Fortune 500 companies that trust VasperNet for their critical technology needs
+              Join hundreds of Fortune 500 companies that trust Velora Tek for their critical technology needs
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

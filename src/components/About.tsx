@@ -84,7 +84,7 @@ export const About = () => {
           </p>
           <TypewriterEffect
             words={[
-              { text: "VasperNet empowers", className: "text-[#133a7c] font-bold" },
+              { text: "Velora Tek empowers", className: "text-[#133a7c] font-bold" },
               { text: "Fortune 500 companies with", className: "font-bold" },
               { text: "enterprise-grade IT solutions.", className: "text-[#1976d2] font-bold" },
             ]}
@@ -135,7 +135,7 @@ export const About = () => {
                 {/* Gradient top border */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#133a7c] via-black to-[#1976d2] rounded-t-2xl" />
                 <h3 className="font-extrabold text-[#111] mb-2 mt-1 text-center">Certified. Compliant. Trusted.</h3>
-                <p className="text-gray-700 text-center mb-2">VasperNet meets the highest standards in security and compliance.</p>
+                <p className="text-gray-700 text-center mb-2">Velora Tek meets the highest standards in security and compliance.</p>
                 <div className="flex flex-wrap justify-center gap-4 mb-2">
                   <div className="flex flex-col items-center">
                     <span className="p-3 bg-gradient-to-br from-[#133a7c]/10 to-[#1976d2]/10 rounded-xl mb-2">

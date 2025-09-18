@@ -74,7 +74,7 @@ export const Contact = () => {
       icon: Mail,
       title: "Enterprise Inquiries",
       subtitle: "Business Development",
-      contact: "enterprise@vaspernet.com",
+      contact: "OscarM@vaspernet.com",
       description: "Strategic partnerships and enterprise solutions",
       color: "from-blue-600 to-cyan-600",
       bgColor: "bg-blue-50",
@@ -84,7 +84,7 @@ export const Contact = () => {
       icon: MessageSquare,
       title: "General Support",
       subtitle: "Technical Assistance",
-      contact: "support@vaspernet.com",
+      contact: "support@veloratek.com",
       description: "Technical questions and general inquiries",
       color: "from-green-600 to-emerald-600",
       bgColor: "bg-green-50",
@@ -97,8 +97,8 @@ export const Contact = () => {
       city: "New York",
       country: "United States",
       address: "350 5th Avenue, New York, NY 10118",
-      phone: "+1 (555) 123-4567",
-      email: "nyc@vaspernet.com",
+      phone: "(949) 396-0640",
+      email: "nyc@veloratek.com",
       timezone: "EST (UTC-5)",
       services: ["Cybersecurity", "Cloud Solutions", "Enterprise Consulting"]
     },
@@ -107,7 +107,7 @@ export const Contact = () => {
       country: "United Kingdom",
       address: "30 St Mary Axe, London EC3A 8BF",
       phone: "+44 20 7123 4567",
-      email: "london@vaspernet.com",
+      email: "london@veloratek.com",
       timezone: "GMT (UTC+0)",
       services: ["Network Management", "Digital Transformation", "Compliance"]
     },
@@ -116,7 +116,7 @@ export const Contact = () => {
       country: "Singapore",
       address: "71 Robinson Road, Singapore 068895",
       phone: "+65 6123 4567",
-      email: "singapore@vaspernet.com",
+      email: "singapore@veloratek.com",
       timezone: "SGT (UTC+8)",
       services: ["Data Analytics", "AI Solutions", "Regional Support"]
     }
@@ -180,7 +180,7 @@ export const Contact = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-6 bg-blue-100 text-blue-800 border-blue-200 px-4 py-2">
-                Contact VasperNet
+                Contact Velora Tek
               </Badge>
               
               <TypewriterEffect
@@ -194,7 +194,7 @@ export const Contact = () => {
               />
               
               <TextGenerateEffect
-                words="Connect with our enterprise solutions team to discuss your technology requirements and discover how VasperNet can accelerate your digital transformation journey."
+                words="Connect with our enterprise solutions team to discuss your technology requirements and discover how Velora Tek can accelerate your digital transformation journey."
                 className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12"
                 duration={0.7}
               />
@@ -411,7 +411,7 @@ export const Contact = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Offices Coming Soon</h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Our global office locations will be featured here. VasperNet serves enterprise clients worldwide 
+                Our global office locations will be featured here. Velora Tek serves enterprise clients worldwide 
                 with local expertise and global capabilities, ensuring 24/7 support across all time zones.
               </p>
             </div>
@@ -527,7 +527,7 @@ export const Contact = () => {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Join hundreds of Fortune 500 companies that trust VasperNet for their critical technology needs
+              Join hundreds of Fortune 500 companies that trust Velora Tek for their critical technology needs
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

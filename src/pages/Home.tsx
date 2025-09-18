@@ -9,6 +9,7 @@ import { Navigation } from "@/components/Navigation";
 import { OutageCTA } from "@/components/OutageCTA";
 import { VirtualITDirector } from "@/components/VirtualITDirector";
 import { SharePointServices } from "@/components/SharePointServices";
+import { SharePointCTA } from "@/components/SharePointCTA";
 
 export const Home = () => {
   return (
@@ -22,9 +23,10 @@ export const Home = () => {
         </div>
       </div>
       <VirtualITDirector />
-      <SharePointServices />
+      <SharePointCTA />
       <About />
       <Services />
+      <SharePointServices />
       <Portfolio />
       <Contact />
       <Footer />

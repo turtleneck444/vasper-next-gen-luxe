@@ -188,7 +188,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Direct Line</p>
-                    <p className="text-corporate-gray">+1 (555) 123-4567</p>
+                    <p className="text-corporate-gray">(949) 396-0640</p>
                     <p className="text-sm text-corporate-gray">Enterprise Priority Support</p>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Enterprise Sales</p>
-                    <p className="text-corporate-gray">enterprise@vaspernet.com</p>
+                    <p className="text-corporate-gray">OscarM@vaspernet.com</p>
                     <p className="text-sm text-corporate-gray">Response within 4 hours</p>
                   </div>
                 </div>
