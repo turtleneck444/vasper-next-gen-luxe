@@ -3,7 +3,7 @@ import { Target, Award, Users } from "lucide-react";
 import { Meteors } from "@/components/ui/meteors";
 import React from "react";
 import { TypewriterEffect, TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-import { Timeline } from "@/components/ui/timeline";
+
 
 const Step = ({ title }: { title: string }) => {
   return (
@@ -128,51 +128,6 @@ export const About = () => {
                 </Card>
               ))}
             </div>
-            {/* Timeline Section */}
-            <Timeline
-              data={[
-                {
-                  title: "2012: VasperNet Founded",
-                  content: (
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                      VasperNet launches in Silicon Valley, setting out to redefine enterprise IT with a focus on security, reliability, and innovation.
-                    </p>
-                  ),
-                },
-                {
-                  title: "2014: First Fortune 500 Partnership",
-                  content: (
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                      Secured a landmark deal with a Fortune 500 client, establishing VasperNet as a trusted technology partner for global enterprises.
-                    </p>
-                  ),
-                },
-                {
-                  title: "2017: Global Expansion",
-                  content: (
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                      Opened offices in London, Singapore, and Dubai, delivering world-class cybersecurity, cloud, and infrastructure management worldwide.
-                    </p>
-                  ),
-                },
-                {
-                  title: "2020: AI & Cloud Innovation",
-                  content: (
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                      Launched proprietary AI-driven security and cloud platforms, empowering clients with next-generation digital transformation.
-                    </p>
-                  ),
-                },
-                {
-                  title: "2024: Industry Leadership",
-                  content: (
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                      Recognized as a global leader in enterprise IT, trusted by Fortune 500s for excellence, security, and innovation.
-                    </p>
-                  ),
-                },
-              ]}
-            />
 
             {/* Certifications - Luxury Cybersecurity Theme */}
             <div className="mt-8 flex justify-center">
