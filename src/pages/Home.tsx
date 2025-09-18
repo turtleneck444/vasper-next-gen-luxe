@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { OutageCTA } from "@/components/OutageCTA";
 import { VirtualITDirector } from "@/components/VirtualITDirector";
+import { SharePointServices } from "@/components/SharePointServices";
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
         </div>
       </div>
       <VirtualITDirector />
+      <SharePointServices />
       <About />
       <Services />
       <Portfolio />
