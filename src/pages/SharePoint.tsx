@@ -30,30 +30,35 @@ export const SharePoint = () => {
   const handleCallNow = () => {
     window.location.href = "tel:(949)396-0640";
   };
+
   const services = [
     {
       icon: <Settings className="w-8 h-8" />,
       title: "SharePoint Setup & Configuration",
       description: "Complete SharePoint Online and On-Premises deployment with custom configuration tailored to your business needs.",
-      features: ["Initial Site Architecture", "Permission Structure Setup", "Custom Branding & Themes", "Integration with Microsoft 365"]
+      features: ["Initial Site Architecture", "Permission Structure Setup", "Custom Branding & Themes", "Integration with Microsoft 365"],
+      link: "/sharepoint/setup"
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Data Migration & Management", 
       description: "Seamless migration from legacy systems to SharePoint with comprehensive data organization and management.",
-      features: ["Legacy System Migration", "File Structure Optimization", "Metadata Management", "Version Control Setup"]
+      features: ["Legacy System Migration", "File Structure Optimization", "Metadata Management", "Version Control Setup"],
+      link: "/sharepoint/migration"
     },
     {
       icon: <Workflow className="w-8 h-8" />,
       title: "Workflow Automation",
       description: "Power Platform integration with SharePoint to create automated workflows that streamline your business processes.",
-      features: ["Power Automate Integration", "Custom Forms with PowerApps", "Approval Workflows", "Business Process Automation"]
+      features: ["Power Automate Integration", "Custom Forms with PowerApps", "Approval Workflows", "Business Process Automation"],
+      link: "/sharepoint/automation"
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: "Training & Support",
       description: "Comprehensive user training and ongoing support to ensure maximum adoption and productivity gains.",
-      features: ["End-User Training Sessions", "Administrator Training", "Best Practices Documentation", "Ongoing Support & Maintenance"]
+      features: ["End-User Training Sessions", "Administrator Training", "Best Practices Documentation", "Ongoing Support & Maintenance"],
+      link: "/sharepoint/training"
     }
   ];
 
@@ -76,6 +81,10 @@ export const SharePoint = () => {
     "Education & Research",
     "Non-Profit Organizations"
   ];
+
+  const handleLearnMore = (link: string) => {
+    navigate(link);
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -181,6 +190,7 @@ export const SharePoint = () => {
                   
                   <Button 
                     variant="outline" 
+                    onClick={() => handleLearnMore(service.link)}
                     className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                   >
                     Learn More
@@ -219,13 +229,11 @@ export const SharePoint = () => {
                   Industries We Serve
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  {industries.map((industry) => (
-                    <Card key={industry} className="p-4 bg-white/95 border-0 shadow-md hover:shadow-lg transition-all duration-300">
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        <span className="font-medium text-foreground">{industry}</span>
-                      </div>
-                    </Card>
+                  {industries.map((industry, index) => (
+                    <div key={industry} className="flex items-center gap-3 p-4 bg-white/80 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span className="text-corporate-gray font-medium">{industry}</span>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -235,37 +243,31 @@ export const SharePoint = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="corporate-section">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="w-full px-6">
-          <div className="max-w-4xl mx-auto text-center bg-white rounded-2xl shadow-corporate-lg p-12">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Zap className="w-8 h-8 text-primary" />
-              <span className="text-primary font-semibold text-lg">Ready to Transform Your Business?</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Get Started with SharePoint Today
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Transform Your Business?
             </h2>
-            
-            <p className="text-xl text-corporate-gray mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation to discover how SharePoint can revolutionize 
-              your business collaboration and productivity.
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Join hundreds of companies that trust Velora Tek for their SharePoint needs. 
+              Let's discuss how we can help you achieve your goals.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 onClick={handleScheduleConsultation}
-                className="gradient-primary-subtle text-white font-semibold px-10 py-4 shadow-corporate hover:shadow-corporate-lg transition-all duration-300"
+                className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <Phone className="mr-2 w-5 h-5" />
-                Schedule Free Consultation
+                Schedule Consultation
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
                 onClick={handleCallNow}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-4"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4"
               >
                 Call: (949) 396-0640
               </Button>

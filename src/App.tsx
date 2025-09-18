@@ -7,6 +7,10 @@ import PageLoader from "./components/PageLoader";
 import Index from "./pages/Index";
 import { Services } from "./pages/Services";
 import { SharePoint } from "./pages/SharePoint";
+import { SharePointSetup } from "./pages/SharePointSetup";
+import { SharePointMigration } from "./pages/SharePointMigration";
+import { SharePointAutomation } from "./pages/SharePointAutomation";
+import { SharePointTraining } from "./pages/SharePointTraining";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -46,6 +50,10 @@ function App() {
               <Route path="/" element={<Index />} />
               <Route path="/services" element={<Services />} />
               <Route path="/sharepoint" element={<SharePoint />} />
+              <Route path="/sharepoint/setup" element={<SharePointSetup />} />
+              <Route path="/sharepoint/migration" element={<SharePointMigration />} />
+              <Route path="/sharepoint/automation" element={<SharePointAutomation />} />
+              <Route path="/sharepoint/training" element={<SharePointTraining />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/admin" element={<AdminDashboard />} />
