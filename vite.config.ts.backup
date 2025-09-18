@@ -43,8 +43,14 @@ export default defineConfig(({ mode }) => ({
         drop_debugger: true,
         // Remove console statements in production
         pure_funcs: mode === 'production' ? ['console.log', 'console.warn', 'console.error'] : [],
-        // Mobile-specific optimizations - REMOVED UNSAFE OPTIONS
+        // Mobile-specific optimizations
         passes: 2,
+        unsafe: true,
+        unsafe_comps: true,
+        unsafe_math: true,
+        unsafe_proto: true,
+        unsafe_regexp: true,
+        unsafe_undefined: true,
       },
       mangle: {
         // Optimize for mobile
