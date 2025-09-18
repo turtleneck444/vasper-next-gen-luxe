@@ -71,24 +71,25 @@ export const Contact = () => {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after successful submission
+    // Let Netlify handle the form submission
+    // The form will submit normally to Netlify's form endpoint
     setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-      setIsSubmitted(false);
-    }, 3000);
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      
+      // Reset form after successful submission
+      setTimeout(() => {
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        setIsSubmitted(false);
+      }, 3000);
+    }, 1000);
   };
 
   const handleScheduleConsultation = () => {
@@ -227,7 +228,23 @@ Trusted by Fortune 500 companies worldwide.
                         <p className="text-gray-600">Thank you for your message. We'll get back to you soon.</p>
                       </div>
                     ) : (
-                      <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
+                      <form 
+                        id="contact-form" 
+                        name="contact" 
+                        method="POST" 
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        onSubmit={handleSubmit} 
+                        className="space-y-6"
+                      >
+                        {/* Hidden field for Netlify bot protection */}
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div style={{ display: 'none' }}>
+                          <label>
+                            Don't fill this out if you're human: <input name="bot-field" />
+                          </label>
+                        </div>
+
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

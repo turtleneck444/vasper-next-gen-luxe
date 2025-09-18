@@ -3,7 +3,7 @@ import { Casestudy5 } from "@/components/ui/casestudy-5";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Portfolio } from "@/components/Portfolio";
-import Contact from "@/components/Contact";
+import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import TrustSection from "@/components/blocks/trust-section";
 import Hero from "@/components/blocks/hero";

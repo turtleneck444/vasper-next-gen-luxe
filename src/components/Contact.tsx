@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, Phone, Mail, Clock, MessageSquare, Send, CheckCircle } from "lucide-react";
 import { validateEmail, validatePhone, sanitizeInput } from "../utils/security";
 
-export default function Contact() {
+export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -69,24 +69,24 @@ export default function Contact() {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after successful submission
+    // Let Netlify handle the form submission
     setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-      setIsSubmitted(false);
-    }, 3000);
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      
+      // Reset form after successful submission
+      setTimeout(() => {
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        setIsSubmitted(false);
+      }, 3000);
+    }, 1000);
   };
 
   return (
@@ -185,7 +185,22 @@ export default function Contact() {
                     <p className="text-gray-600">Thank you for your message. We'll get back to you soon.</p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form 
+                    name="contact-component" 
+                    method="POST" 
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={handleSubmit} 
+                    className="space-y-6"
+                  >
+                    {/* Hidden field for Netlify bot protection */}
+                    <input type="hidden" name="form-name" value="contact-component" />
+                    <div style={{ display: 'none' }}>
+                      <label>
+                        Don't fill this out if you're human: <input name="bot-field" />
+                      </label>
+                    </div>
+
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -319,4 +334,4 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};
